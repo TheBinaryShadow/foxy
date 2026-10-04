@@ -4,6 +4,7 @@
 # Sub categories orders are preserved
 categories:
     overview_doc:
+        - foxy
         - glossary
         - overview
     setup_doc:

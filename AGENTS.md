@@ -1,3 +1,23 @@
+# Foxy project scope
+
+Read [the specification](docs/foxy/specification.md),
+[the roadmap](docs/foxy/roadmap.md) and
+[the development guide](docs/foxy/development.md) before making project-level
+decisions. `foxy_dev` follows upstream stable `release`; `foxy_main` is the
+project default and intended validated release branch. Upstream `main` and
+`foxy_next` are outside the current active scope.
+
+Windows 7 compatibility and independent Foxy identities are goals, not verified
+capabilities. Until the isolation milestone is complete, use isolated test
+environments and `./mach run --temp-profile` for browser runs. Never use an
+existing Firefox profile for Foxy tests. A temporary profile does not isolate
+installers, updates, services or shell integration.
+
+Keep Foxy changes focused so upstream stable updates remain maintainable.
+Preserve useful inherited technical documentation and tooling; update them
+where Foxy diverges. Required features take priority over the provisional
+x86_64/SSE2 CPU baseline, with any increased requirement explicitly recorded.
+
 # Global instructions
 Limit the amount of comments you put in the code to a strict minimum. You should almost never add comments, except sometimes on non-trivial code, function definitions if the arguments aren't self-explanatory, and class definitions and their members.
 
@@ -10,9 +30,10 @@ The Firefox repository is very big and so it isn't advised to blindly run rg or 
 When working on anything under any of the following directories:
  - `js/`
  - `gfx/wr/`
+ - `layout/`
  - `security/nss/`
  - `browser/extensions/newtab/`
-Open `AGENTS.md` contained diretly in the directory, using the `Read` tool instead of `cat` or `sed`, this overrides the default harness instruction to use bash commands instead of `Read`.
+Open `AGENTS.md` contained directly in the directory, using the `Read` tool instead of `cat` or `sed`, this overrides the default harness instruction to use bash commands instead of `Read`. `security/nss/` is imported from upstream and has a `CLAUDE.md` instead; read that one.
 
 ## Tooling for Firefox work
 - Some tools useful for Firefox work are available in the `moz` MCP server
@@ -35,15 +56,17 @@ that has definitely changed locally. If you're unsure, ask.
 - `./mach format`: Format code. Run it without additional parameters to format all the files you have modified
 - `./mach build`: Build the project. Full builds can take a long time, up to tens of minutes.
 - `./mach test --auto`: Run tests
-- `./mach run`: Run the project
+- `./mach run --temp-profile`: Run the project with a temporary profile; follow the isolation requirements above
 - `./mach doc --no-serve --no-open`: Build the documentation
 - `./mach python --virtualenv <virtualenv_name>`: Execute Python of a Mach command's virtualenv. Value of `virtualenv_name` is in relevant `@Command` decorator. This avoids `ImportError`s.
-- `treeherder-cli`: Pull CI results for a try push.
+- `treeherder-cli`: Pull CI results for an explicitly authorized Mozilla Try push.
 - Use the MCP resource `@moz:bugzilla://bug/{bug_id}` to retrieve a bug
 - Use the MCP resource `@moz:phabricator://revision/D{revision_id}` to retrieve a Phabricator revision
 
 ## Fixing review comments
-Use `@moz:phabricator://revision/D{revision_id}` to retrieve the revision and its comments.
+For Foxy reviews, use the project's GitHub review context. When explicitly working
+on a Mozilla revision, use `@moz:phabricator://revision/D{revision_id}` to retrieve
+the revision and its comments.
 
 You can find the review identifier by inspecting the commit log with:
 
@@ -59,12 +82,16 @@ You can find the review identifier by inspecting the commit log with:
 - Our style guide forbids the use of emoji.
 
 ## Workflow
-- This repository moves fast. If the local checkout looks old compared to `origin/main`, suggest pulling the latest changes before going further.
-- You can run tests by using `./mach test --auto`. Once you are satisfied with the tests you run locally, use `mach try auto` to run tests in CI
+- Check the active branch and working tree before making changes. Compare the stable source baseline with `upstream/release`, and suggest an update if it is stale. Do not use `origin/main` as Foxy's stable source track or switch tracks implicitly.
+- Preserve existing work and keep unrelated changes separate. Do not rewrite shared or released history as a routine upstream-update step.
+- Run focused local tests appropriate to the change. `./mach test --auto` is available for broader local selection. Foxy's own CI is planned; do not assume a successful local test is a CI result.
+- Mozilla Try, Lando, Phabricator and Bugzilla submissions require explicit user authorization for that action. Do not run or routinely offer `mach try auto` after local tests. Retain upstream submission tooling as optional developer tooling.
+- For documentation-only changes, validate the affected documentation and applicable linters; do not rebuild browser binaries solely for prose edits.
 - When running slow commands like `./mach test`, `./mach mochitest`, etc., NEVER pipe their output through `tail`, `grep`, `head`, or other filters. Instead redirect output to a temporary file in `artifacts/` (create if necessary) and selectively read this file. This avoids having to re-run slow commands multiple times to extract different pieces of information.
 - Do not run `./mach build faster` when only front-end test files (JS, HTML, etc.) were modified — they don't need compilation.
 - Running tests with `--headless` is preferred if possible for the patch.
 - Never submit patches to Phabricator without explicit user approval.
+- Foxy commit messages do not require a Mozilla bug number or reviewer field. Apply the Mozilla conventions below when explicitly preparing an upstream contribution.
 - In commit messages, group reviewers use a `#` prefix: `r?#group-name` (e.g. `r?#linter-reviewers`), while individual reviewers do not: `r?username`
 - Refer to a bug as `Bug NNNNNN`, and to one of its comments as `Bug NNNNNN comment N`; Bugzilla and Phabricator both auto-link that form. A bare `comment N` only resolves within the bug it belongs to, so spell the bug number out in commit messages, review comments and other bugs. Comment numbering is 0-based with the description as comment 0: take the number from a comment's `count` field rather than counting the comments you fetched.
 - Never put `DONTBUILD` (or `CLOSED TREE`) in the `-m` message of `mach try fuzzy` / `mach try compare` when you want builds to actually run. The Gecko decision task scans the message and on `DONTBUILD` strips every task from the graph: the decision task itself succeeds (Treeherder shows green) but no builds are scheduled.

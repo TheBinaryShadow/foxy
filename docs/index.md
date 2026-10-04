@@ -1,4 +1,4 @@
-# Firefox Source Tree Documentation
+# Foxy Source Tree Documentation
 
 ```{{toctree}}
 :caption: Overview

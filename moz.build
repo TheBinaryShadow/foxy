@@ -319,6 +319,8 @@ OBJDIR_PP_FILES[".cargo"] += [
 
 DEFINES["top_srcdir"] = TOPSRCDIR
 
+SPHINX_TREES["foxy"] = "docs/foxy"
+
 SPHINX_TREES["contributing"] = "docs/contributing"
 
 SPHINX_TREES["code-quality"] = "docs/code-quality"

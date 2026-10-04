@@ -90,7 +90,7 @@ jsdoc_config_path = "jsdoc.json"
 templates_path = ["_templates"]
 source_suffix = [".md"]
 master_doc = "index"
-project = "Firefox Source Docs"
+project = "Foxy Source Docs"
 
 # Override the search box to use Google instead of
 # sphinx search on firefox-source-docs.mozilla.org
@@ -135,7 +135,7 @@ else:
 os.environ["LANG"] = "C"
 
 html_static_path = ["_static"]
-htmlhelp_basename = "FirefoxTreeDocs"
+htmlhelp_basename = "FoxyTreeDocs"
 
 moz_project_name = "main"
 
@@ -144,9 +144,9 @@ html_show_copyright = False
 # GitHub integration for "View page source" links
 html_context = {
     "display_github": True,
-    "github_user": "mozilla-firefox",
-    "github_repo": "firefox",
-    "github_version": "main",
+    "github_user": "TheBinaryShadow",
+    "github_repo": "foxy",
+    "github_version": "foxy_dev",
 }
 
 # Only run autosection for the page title.
