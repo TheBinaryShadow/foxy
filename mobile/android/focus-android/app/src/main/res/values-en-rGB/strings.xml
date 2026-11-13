@@ -16,6 +16,8 @@
   <string name="feedback_erase2">Browsing history cleared</string>
   <!-- "Snackbar" shown after the user has pressed the 'erase' button at the end of a custom tab browsing session -->
   <string name="feedback_erase_custom_tab">Tab’s browsing history has been erased.</string>
+  <!-- Content description for the button that opens the menu. -->
+  <string name="content_description_menu">Menu</string>
   <!-- Menu item: Share the currently visible page -->
   <string name="menu_share">Share…</string>
   <!--
@@ -91,7 +93,7 @@
     Focus is hard coded since we can't use variables in this context.
     Do not translate or transliterate Focus.
   -->
-  <string name="text_selection_search_action_focus" tools:ignore="BrandUsage">Search in Focus</string>
+  <string name="text_selection_search_action_focus" tools:ignore="BrandUsage,UnusedResources">Search in Focus</string>
   <!--
     This is the label of an action we offer when the user selects text in other third-party apps.
     Klar is hard coded since we can't use variables in this context.
@@ -380,14 +382,6 @@
   <string name="onboarding_second_screen_default_browser_button_text">Set as default browser</string>
   <!-- New Onboarding flow second screen skip onboarding button label -->
   <string name="onboarding_second_screen_skip_button_text">Skip</string>
-  <!-- First run tour (Default browser): Title -->
-  <string name="firstrun_defaultbrowser_title">Power up your privacy</string>
-  <!-- First run tour (Search): Title -->
-  <string name="firstrun_search_title">Your search, your way</string>
-  <!-- First run tour (Shortcut): Title -->
-  <string name="firstrun_shortcut_title">Add shortcuts to your home screen</string>
-  <!-- First run tour (Privacy): Title -->
-  <string name="firstrun_privacy_title">Make privacy a habit</string>
   <!-- Label of the action that will add the current website to the home screen (shown in the confirmation dialog). -->
   <string name="dialog_addtohomescreen_action_add">Add</string>
   <!-- Label of the action that will close the dialog and not add anything to the home screen (shown in the confirmation dialog). -->
@@ -533,8 +527,6 @@
   <string name="preference_exceptions_menu_remove">Remove</string>
   <!-- Button to remove all websites from the exception list -->
   <string name="preference_exceptions_remove_all_button_label">Remove all web sites</string>
-  <!-- Title for Preference screen for cookie blocking for exceptions tracking protection -->
-  <string name="preference_block_cookies_title">Block Cookies</string>
   <!-- Headline for the tab crash report screen -->
   <string name="tab_crash_report_headline">Sorry. We’re having a problem with this tab.</string>
   <!-- Subtitle for the tab crash report screen -->

@@ -16,6 +16,8 @@
   <string name="feedback_erase2">Historie prohlížení vymazána</string>
   <!-- "Snackbar" shown after the user has pressed the 'erase' button at the end of a custom tab browsing session -->
   <string name="feedback_erase_custom_tab">Historie prohlížení panelu byla vymazána.</string>
+  <!-- Content description for the button that opens the menu. -->
+  <string name="content_description_menu">Nabídka</string>
   <!-- Menu item: Share the currently visible page -->
   <string name="menu_share">Sdílet…</string>
   <!--
@@ -91,7 +93,7 @@
     Focus is hard coded since we can't use variables in this context.
     Do not translate or transliterate Focus.
   -->
-  <string name="text_selection_search_action_focus" tools:ignore="BrandUsage">Vyhledat ve Focusu</string>
+  <string name="text_selection_search_action_focus" tools:ignore="BrandUsage,UnusedResources">Vyhledat ve Focusu</string>
   <!--
     This is the label of an action we offer when the user selects text in other third-party apps.
     Klar is hard coded since we can't use variables in this context.
@@ -168,7 +170,7 @@
   -->
   <string name="preference_autocomplete_topsite_summary2">Po zapnutí bude %s našeptávat více než 450 populárních URL adres.</string>
   <!-- Title of "switch" preference that enables/disables autocomplete for the user-defined list -->
-  <string name="preference_switch_autocomplete_user_list">Pro stránky které přidáte</string>
+  <string name="preference_switch_autocomplete_user_list">Pro stránky, které přidáte</string>
   <!--
     Summary for the toggle to enable autocomplete for the user-defined list
     %s is the name of the app (for example "Firefox Focus" or "Firefox Klar").
@@ -380,14 +382,6 @@
   <string name="onboarding_second_screen_default_browser_button_text">Nastavit jako výchozí prohlížeč</string>
   <!-- New Onboarding flow second screen skip onboarding button label -->
   <string name="onboarding_second_screen_skip_button_text">Přeskočit</string>
-  <!-- First run tour (Default browser): Title -->
-  <string name="firstrun_defaultbrowser_title">Posuňte své soukromí na vyšší úroveň</string>
-  <!-- First run tour (Search): Title -->
-  <string name="firstrun_search_title">Vaše hledání, vaše cesta</string>
-  <!-- First run tour (Shortcut): Title -->
-  <string name="firstrun_shortcut_title">Přidejte si zkratky na vaši domovskou obrazovku</string>
-  <!-- First run tour (Privacy): Title -->
-  <string name="firstrun_privacy_title">Udělejte ze soukromí zvyk</string>
   <!-- Label of the action that will add the current website to the home screen (shown in the confirmation dialog). -->
   <string name="dialog_addtohomescreen_action_add">Přidat</string>
   <!-- Label of the action that will close the dialog and not add anything to the home screen (shown in the confirmation dialog). -->
@@ -493,7 +487,7 @@
   <!-- Preference for block autoplay audio and video -->
   <string name="preference_block_autoplay_audio_video">Blokovat automatické přehrávání zvuků i videí</string>
   <!-- Preference to enable remote debugging of the app via USB or Wi-Fi -->
-  <string name="preference_remote_debugging">Vzdálené ladění pomocí USB//Wi-Fi</string>
+  <string name="preference_remote_debugging">Vzdálené ladění pomocí USB/Wi-Fi</string>
   <!-- Text Button for show biometric prompt -->
   <string name="show_biometric_button_text">Odemknout</string>
   <!-- Title text for biometric prompt pop-up -->
@@ -533,8 +527,6 @@
   <string name="preference_exceptions_menu_remove">Odebrat</string>
   <!-- Button to remove all websites from the exception list -->
   <string name="preference_exceptions_remove_all_button_label">Odebrat všechny stránky</string>
-  <!-- Title for Preference screen for cookie blocking for exceptions tracking protection -->
-  <string name="preference_block_cookies_title">Blokovat cookies</string>
   <!-- Headline for the tab crash report screen -->
   <string name="tab_crash_report_headline">Promiňte. S tímto panelem máme problém.</string>
   <!-- Subtitle for the tab crash report screen -->
@@ -583,7 +575,7 @@
     Text for context menu additional note.
     %1$s is a placeholder for the app name.
   -->
-  <string name="contextmenu_erased_images_note2"><![CDATA[Uložené a sdílené obrázky <b>nebudou</b> smazány když smažete historii aplikace %1$s]]></string>
+  <string name="contextmenu_erased_images_note2"><![CDATA[Uložené a sdílené obrázky <b>nebudou</b> smazány, když smažete historii aplikace %1$s]]></string>
   <!--
     Theme Preferences
 
@@ -604,7 +596,7 @@
     The text of the error page for websites that do not support HTTPS when HTTPS-Only is turned on. %1$s is the name of the app (for example "Firefox Focus" or "Firefox Klar"),
     %2$s is a URL to a support article. Contains a button that will redirect the user to Privacy & Security Screen.
   -->
-  <string name="errorpage_httpsonly_message2" tools:ignore="IncorrectStraightDoubleQuote"><![CDATA[%1$s se pro větší bezpečnost pokouší používat zabezpečené připojení skrze protokol HTTPS vždy, kdy je to možné. <a href=\"%2$s\">Dozvědět se více</a><br/><br/> Toto nastavení můžete změnit v části Nastavení -> Soukromí a zabezpečení > Zabezpečení.]]></string>
+  <string name="errorpage_httpsonly_message2" tools:ignore="IncorrectStraightDoubleQuote"><![CDATA[%1$s se pro větší bezpečnost pokouší používat zabezpečené připojení skrze protokol HTTPS vždy, kdy je to možné. <a href=\"%2$s\">Dozvědět se více</a><br/><br/> Toto nastavení můžete změnit v části Nastavení > Soukromí a zabezpečení > Zabezpečení.]]></string>
   <!--
     The strings below override AC defaults and are only referenced from there.
 

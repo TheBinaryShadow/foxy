@@ -16,6 +16,8 @@
   <string name="feedback_erase2">Nettleserhistorikk er slettet</string>
   <!-- "Snackbar" shown after the user has pressed the 'erase' button at the end of a custom tab browsing session -->
   <string name="feedback_erase_custom_tab">Fanens nettleserhistorikk har blitt slettet.</string>
+  <!-- Content description for the button that opens the menu. -->
+  <string name="content_description_menu">Meny</string>
   <!-- Menu item: Share the currently visible page -->
   <string name="menu_share">Del…</string>
   <!--
@@ -91,7 +93,7 @@
     Focus is hard coded since we can't use variables in this context.
     Do not translate or transliterate Focus.
   -->
-  <string name="text_selection_search_action_focus" tools:ignore="BrandUsage">Søk med Focus</string>
+  <string name="text_selection_search_action_focus" tools:ignore="BrandUsage,UnusedResources">Søk med Focus</string>
   <!--
     This is the label of an action we offer when the user selects text in other third-party apps.
     Klar is hard coded since we can't use variables in this context.
@@ -380,14 +382,6 @@
   <string name="onboarding_second_screen_default_browser_button_text">Bruk som standard nettleser</string>
   <!-- New Onboarding flow second screen skip onboarding button label -->
   <string name="onboarding_second_screen_skip_button_text">Hopp over</string>
-  <!-- First run tour (Default browser): Title -->
-  <string name="firstrun_defaultbrowser_title">Styrk personvernet ditt</string>
-  <!-- First run tour (Search): Title -->
-  <string name="firstrun_search_title">Ditt søk på din måte</string>
-  <!-- First run tour (Shortcut): Title -->
-  <string name="firstrun_shortcut_title">Legg til snarveier på startskjermen</string>
-  <!-- First run tour (Privacy): Title -->
-  <string name="firstrun_privacy_title">Gjør personvern til en vane</string>
   <!-- Label of the action that will add the current website to the home screen (shown in the confirmation dialog). -->
   <string name="dialog_addtohomescreen_action_add">Legg til</string>
   <!-- Label of the action that will close the dialog and not add anything to the home screen (shown in the confirmation dialog). -->
@@ -533,8 +527,6 @@
   <string name="preference_exceptions_menu_remove">Fjern</string>
   <!-- Button to remove all websites from the exception list -->
   <string name="preference_exceptions_remove_all_button_label">Fjern alle nettsteder</string>
-  <!-- Title for Preference screen for cookie blocking for exceptions tracking protection -->
-  <string name="preference_block_cookies_title">Blokker infokapsler</string>
   <!-- Headline for the tab crash report screen -->
   <string name="tab_crash_report_headline">Beklager. Vi har et problem med denne fanen.</string>
   <!-- Subtitle for the tab crash report screen -->

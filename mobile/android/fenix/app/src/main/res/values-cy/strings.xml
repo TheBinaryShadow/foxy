@@ -75,9 +75,11 @@
   <string name="home_bookmarks_menu_item_remove">Tynnu</string>
   <!-- About content. %1$s is the name of the app (for example "Firefox"). -->
   <string name="about_content" tools:ignore="BrandUsage">Mae %1$s yn cael ei greu gan Mozilla.</string>
-  <!-- Private Browsing -->
-  <string name="private_browsing_common_myths">Mythau cyffredin am bori preifat</string>
-  <!-- Text to be announced by the accessibility service to inform the user that the private browsing mode is currently active. -->
+  <!--
+    Private Browsing
+
+    Text to be announced by the accessibility service to inform the user that the private browsing mode is currently active.
+  -->
   <string name="private_browsing_a11y_session_announcement">Sesiwn pori preifat</string>
   <!--
     True Private Browsing Mode
@@ -181,8 +183,10 @@
   <!--
     Browser Fragment
 
-    Content description (not visible, for screen readers etc.): Navigate backward (browsing history)
+    Label for popup button that appears when long-pressing the main menu. Tapping it allows the user to customize the main menu layout.
   -->
+  <string name="customize_menu">Cyfaddasu dewislen</string>
+  <!-- Content description (not visible, for screen readers etc.): Navigate backward (browsing history) -->
   <string name="browser_menu_back">Nôl</string>
   <!-- Content description (not visible, for screen readers etc.): Navigate forward (browsing history) -->
   <string name="browser_menu_forward">Ymlaen</string>
@@ -209,6 +213,10 @@
   <string name="browser_menu_no_extensions_installed_description">Dim estyniadau wedi\'u galluogi</string>
   <!-- The description of the browser menu appears when the user hasn't installed any extensions and there are recommended extensions. -->
   <string name="browser_menu_try_a_recommended_extension_description">Rhowch gynnig ar estyniad sy\'n cael ei argymell</string>
+  <!-- In the browser menu: Message under the Extensions menu item, displayed when one or more extensions have updates that require approving changes to their permission settings. %1$s is a comma-separated list of one or more extension names. -->
+  <string name="browser_menu_extensions_review_update_description">Adolygu diweddariad ar gyfer %1$s</string>
+  <!-- In the browser menu: Message under an extension name, displayed when the update requires approving changes to extension settings. -->
+  <string name="browser_menu_extension_review_update_description">Adolygu gosodiadau i\'w diweddaru</string>
   <!-- Browser menu button that opens account settings -->
   <string name="browser_menu_account_settings">Manylion cyfrif</string>
   <!-- Browser menu button that opens the settings menu -->
@@ -263,8 +271,6 @@
   <string name="browser_menu_syncing_paused_caption">Cydweddu wedi\'i oedi</string>
   <!-- Browser menu caption label for an authenticated user -->
   <string name="browser_menu_signed_in_caption">Rheoli\'r hyn rydych yn ei gadw wrth gefn a\'i gydweddu</string>
-  <!-- Browser menu label that creates a private tab -->
-  <string name="browser_menu_new_private_tab">Tab preifat newydd</string>
   <!-- Browser menu label that navigates to the Password screen -->
   <string name="browser_menu_passwords">Cyfrineiriau</string>
   <!-- Content description (not visible, for screen readers etc.) for the handle used to drag the main menu at the bottom of the screen. -->
@@ -313,8 +319,6 @@
   <string name="browser_menu_default_banner_title">Gwnewch %1$s eich porwr arferol</string>
   <!-- Label text within the set as default banner -->
   <string name="browser_menu_default_banner_subtitle_2">Cyflym, preifat, ac wedi\'i wneud ar eich cyfer chi.</string>
-  <!-- Content description (not visible, for screen readers etc.) for the button that dismisses the set as default banner in the menu -->
-  <string name="browser_menu_default_banner_dismiss_promotion">Cau\'r hyrwyddo</string>
   <!-- Content description (not visible, for screen readers etc.) for recommended extensions in main menu -->
   <string name="browser_menu_recommended_extensions_content_description">Rhagor o wybodaeth</string>
   <!--
@@ -383,6 +387,10 @@
   <string name="ai_controls_voice_search_title">Chwilio llafar</string>
   <!-- Description for the voice search AI feature toggle -->
   <string name="ai_controls_voice_search_description">Mae sain yn cael ei drawsnewid yn destun gan Google Speech Services.</string>
+  <!-- Title for the listen to page AI feature toggle -->
+  <string name="ai_controls_listen_to_page_title">Gwrandewch ar y dudalen</string>
+  <!-- Description for the listen to page AI feature toggle -->
+  <string name="ai_controls_listen_to_page_description">Gall eich dyfais ddefnyddio AI i ddarllen yn uchel. Mae\'r testun a\'r sain yn aros yn breifat.</string>
   <!-- Title for the block AI enhancements confirmation dialog -->
   <string name="ai_controls_block_dialog_title">Rhwystro nodweddion AI?</string>
   <!-- Body text for the block AI enhancements confirmation dialog. %1$s is the name of the app (for example "Firefox"). -->
@@ -474,18 +482,6 @@
   <string name="onboarding_preferences_dialog_positive_button">Gorffen</string>
   <!-- Terms of service onboarding title card label. 'Firefox' intentionally hardcoded here -->
   <string name="onboarding_welcome_to_firefox" tools:ignore="BrandUsage">Croeso i Firefox</string>
-  <!-- Line one of the terms of service onboarding page. %1$s is replaced by an active link, using onboarding_term_of_service_line_one_link_text_2 as text (“Firefox Terms of Use”). -->
-  <string name="onboarding_term_of_service_line_one_2">Drwy barhau, rydych yn cytuno i %1$s.</string>
-  <!-- Used as text for the link in onboarding_term_of_service_line_one_2. -->
-  <string name="onboarding_term_of_service_line_one_link_text_2" tools:ignore="BrandUsage">Amodau Defnyddio Firefox</string>
-  <!-- Line two of the terms of service onboarding page. 'Firefox' is intentionally hardcoded. %1$s is replaced by an active link, using onboarding_term_of_service_line_two_link_text as text (“Privacy Notice”). -->
-  <string name="onboarding_term_of_service_line_two_2" tools:ignore="BrandUsage">Mae Firefox yn pryderu am eich preifatrwydd. Dysgwch fwy yn ein %1$s.</string>
-  <!-- Used as text for the link in onboarding_term_of_service_line_two. -->
-  <string name="onboarding_term_of_service_line_two_link_text">Hysbysiad Preifatrwydd</string>
-  <!-- Line three of the terms of service onboarding page. 'Firefox' and 'Mozilla' are intentionally hardcoded. %1$s is replaced by an active link using onboarding_term_of_service_line_three_link_text as text (“Manage”). -->
-  <string name="onboarding_term_of_service_line_three" tools:ignore="BrandUsage">Er mwyn helpu i wella\'r porwr, mae Firefox yn anfon data diagnostig a rhyngweithio i Mozilla. %1$s</string>
-  <!-- Used as text for the link in onboarding_term_of_service_line_three. -->
-  <string name="onboarding_term_of_service_line_three_link_text">Rheoli</string>
   <!-- Terms of use (ToU) onboarding redesign title. -->
   <string name="onboarding_redesign_tou_title" tools:ignore="UnusedResources">Agorwch y porwr Android gorau eto</string>
   <!-- Terms of use (ToU) first subheader. -->
@@ -588,20 +584,6 @@
   <string name="nova_onboarding_set_to_default_subtitle">Rydym yn diogelu eich data ac yn awtomatig yn rhwystro cwmnïau rhag ysbïo ar eich cliciau.</string>
   <!-- "Set to default" onboarding button. -->
   <string name="nova_onboarding_set_to_default_button">Gosod fel fy mhorwr arferol</string>
-  <!-- Toolbar selection onboarding title. -->
-  <string name="nova_onboarding_toolbar_selection_title">Dewis eich bar cyfeiriad</string>
-  <!-- Toolbar selection onboarding "top" option label. -->
-  <string name="nova_onboarding_toolbar_selection_top_label">Brig</string>
-  <!-- Toolbar selection onboarding "bottom" option label. -->
-  <string name="nova_onboarding_toolbar_selection_bottom_label">Gwaelod</string>
-  <!-- Theme selection onboarding title. -->
-  <string name="nova_onboarding_theme_selection_title" tools:ignore="UnusedResources">Dewis eich thema</string>
-  <!-- Theme selection onboarding "automatic" option label. -->
-  <string name="nova_onboarding_theme_selection_automatic_label" tools:ignore="UnusedResources">Awtomatig</string>
-  <!-- Theme selection onboarding "light" option label. -->
-  <string name="nova_onboarding_theme_selection_light_label" tools:ignore="UnusedResources">Golau</string>
-  <!-- Theme selection onboarding "dark" option label. -->
-  <string name="nova_onboarding_theme_selection_dark_label" tools:ignore="UnusedResources">Tywyll</string>
   <!-- Sync onboarding title. -->
   <string name="nova_onboarding_sync_title">Ail gychwyn yn syth o\'r lle roeddech chi</string>
   <!-- Sync onboarding subtitle. -->
@@ -666,12 +648,6 @@
   <string name="nova_onboarding_notifications_subtitle" tools:ignore="BrandUsage,UnusedResources">Darganfyddwch y nodweddion preifatrwydd diweddaraf yn Firefox fel eich bod bob amser yn gwybod sut i gadw\'n ddiogel.</string>
   <!-- Notifications onboarding button. -->
   <string name="nova_onboarding_notifications_button">Troi hysbysiadau ymlaen</string>
-  <!-- "Add search widget" onboarding title. -->
-  <string name="nova_onboarding_add_search_widget_title">Gwnewch bob chwilio\'n fwy preifat</string>
-  <!-- "Add search widget" onboarding subtitle. 'Firefox' is intentionally hardcoded. -->
-  <string name="nova_onboarding_add_search_widget_subtitle" tools:ignore="BrandUsage">Dechreuwch bob chwilio o sgrin gartref eich ffôn a gwybod bod diogeledd awtomatig Firefox yn eich cefnogi.</string>
-  <!-- "Add search widget" onboarding button. 'Firefox' is intentionally hardcoded. -->
-  <string name="nova_onboarding_add_search_widget_button" tools:ignore="BrandUsage">Ychwanegu teclyn Firefox</string>
   <!-- Customize prompt onboarding title. -->
   <string name="nova_onboarding_customize_prompt_title" tools:ignore="UnusedResources">Hawdd i\'w addasu ac yn fwy preifat gyda phob tap</string>
   <plurals name="nova_onboarding_customize_prompt_body" tools:ignore="UnusedResources">
@@ -713,13 +689,19 @@
   <string name="search_widget_text_long">Chwilio’r we</string>
   <!-- Content description (not visible, for screen readers etc.): Voice search -->
   <string name="search_widget_voice">Chwilio llais</string>
+  <!-- Content description (not visible, for screen readers etc.): Button in the search widget that starts a search in a private tab -->
+  <string name="search_widget_private_search">Chwilio preifat</string>
+  <!-- Widget description in the widget picker screen for the search bar widget that includes buttons for private search and for voice search -->
+  <string name="search_bar_widget_description">Bar chwilio gyda chwilio preifat a llais</string>
+  <!-- Widget description in the widget picker screen for the search bar widget that includes buttons for image search, private search and voice search -->
+  <string name="search_bar_with_lens_widget_description">Bar chwilio gyda delwedd, chwilio preifat a llais</string>
+  <!-- Widget description in the widget picker screen for the compact search bar widget -->
+  <string name="compact_search_bar_widget_description">Bar chwilio cryno</string>
   <!--
     Preferences
 
-    Title for the settings page
+    Preference category for general settings
   -->
-  <string name="settings">Gosodiadau</string>
-  <!-- Preference category for general settings -->
   <string name="preferences_category_general">Cyffredinol</string>
   <!-- Preference category for all links about Fenix -->
   <string name="preferences_category_about">Ynghylch</string>
@@ -741,6 +723,8 @@
   <string name="preferences_search">Chwilio</string>
   <!-- Preference for settings related to Search engines -->
   <string name="preferences_search_engines">Peiriannau chwilio</string>
+  <!-- Settings item that adds the Firefox search widget to the device's home screen (tapping it opens the confirmation dialogue) -->
+  <string name="preferences_search_widget_in_home_screen">Ychwanegu teclyn chwilio i\'r sgrin Cartref</string>
   <!-- Settings item to add a search widget on the device's homescreen. -->
   <string name="preferences_add_search_widget_from_settings">Teclyn sgrin gartref</string>
   <!-- Preference for settings related to Search engines suggestions -->
@@ -810,6 +794,8 @@
   <string name="preferences_override_sync_tokenserver">Gweinydd Sync Cyfaddas</string>
   <!-- Preference category for account information -->
   <string name="preferences_category_account">Cyfrif</string>
+  <!-- Preference category for sync controls. Sync can be translated, it's just short for ”Synchronization” in English. -->
+  <string name="preferences_category_sync_controls">Cydweddu</string>
   <!-- Preference for changing where the AddressBar is positioned -->
   <string name="preferences_toolbar_2">Lleoliad y bar cyfeiriad</string>
   <!-- Preference for changing toolbar layout -->
@@ -828,6 +814,8 @@
   <string name="preferences_toolbar_select_shortcut">Dewis llwybr byr</string>
   <!-- Title of a menu option allowing to change the shortcut button shown in the toolbar -->
   <string name="toolbar_shortcut_menu_edit_option">Golygu llwybr byr</string>
+  <!-- Preference category for menu customization -->
+  <string name="preferences_menu">Dewislen</string>
   <!-- Preference for gestures based actions -->
   <string name="preferences_gestures">Ystumiau</string>
   <!-- Preference for settings related to visual options -->
@@ -866,6 +854,8 @@
   <string name="preferences_search_synced_tabs">Chwilio tabiau wedi’u cydweddu</string>
   <!-- Preference for account settings -->
   <string name="preferences_account_settings">Gosodiadau cyfrif</string>
+  <!-- Preference for account and sync settings -->
+  <string name="preferences_account_and_sync_settings">Cyfrif a chydweddu</string>
   <!-- Preference for enabling url autocomplete -->
   <string name="preferences_enable_autocomplete_urls">Awtogwblhau URLau</string>
   <!-- Preference title for switch preference to show sponsored Firefox Suggest search suggestions -->
@@ -902,6 +892,10 @@
   <string name="preferences_open_links_in_apps_ask">Gofyn cyn agor</string>
   <!-- Preference for open links in third party apps never open in apps option -->
   <string name="preferences_open_links_in_apps_never">Byth</string>
+  <!-- Preference category header for media related open links in apps settings -->
+  <string name="preferences_media_category">Cyfrwng</string>
+  <!-- Preference label for choosing whether links open in the YouTube app -->
+  <string name="preferences_open_links_in_youtube">Agor dolenni yn ap YouTube</string>
   <!-- Preference category for file storage. -->
   <string name="preferences_category_file_storage">Cadw ffeiliau</string>
   <!-- Preference title for downloads default location. -->
@@ -982,6 +976,18 @@
   <string name="customize_addon_collection_user_hint">Perchennog y casgliad (ID Defnyddiwr)</string>
   <!-- Toast shown after confirming the custom extension collection configuration -->
   <string name="toast_customize_extension_collection_done">Casgliad estyniadau wedi\'i newid. Yn gadael y rhaglen er mwyn gwneud newidiadau…</string>
+  <!--
+    Add-on removal confirmation dialog
+
+    Title of confirmation dialog. Displayed when uninstalling an extension. %1$s is the name of the extension (for example: Firefox Relay).
+  -->
+  <string name="addon_remove_dialog_title">Tynnu %1$s?</string>
+  <!-- Body of confirmation dialog. Displayed when uninstalling an extension. -->
+  <string name="addon_remove_dialog_body">Mae hyn yn tynnu\'r estyniad a\'i osodiadau o\'r ddyfais hon.</string>
+  <!-- Primary button on confirmation dialog. Tapping it uninstalls the selected extension. -->
+  <string name="addon_remove_dialog_confirm">Tynnu</string>
+  <!-- Secondary button on confirmation dialog. Tapping cancels the process of uninstalling the extension and closes the dialog window. -->
+  <string name="addon_remove_dialog_cancel">Diddymu</string>
   <!--
     Customize Home
 
@@ -1145,6 +1151,18 @@
   <string name="preferences_sync_now">Cydweddu nawr</string>
   <!-- Preference category for sync -->
   <string name="preferences_sync_category">Dewis beth i gydweddu</string>
+  <!-- Preference category for sync controls -->
+  <string name="preferences_category_sync">Data wedi\'i gydweddu</string>
+  <!-- Preference title for the toggle that allows user to turn sync on or off for the device they are on -->
+  <string name="preferences_enable_sync_title">Cydweddu\'r ddyfais hon</string>
+  <!-- Preference summary for the toggle that turns sync on or off for the device, shown when sync is on. -->
+  <string name="preferences_enable_sync_summary_sync_enabled">Mae copi wrth gefn o\'ch data ac ar gael ar ddyfeisiau wedi\'u cydweddu.</string>
+  <!-- Preference summary for the toggle that turns sync on or off for the device, shown when sync is off. It explains where synced data comes from. %1$s is the Firefox brand name. -->
+  <string name="preferences_enable_sync_summary_sync_disabled">Yn defnyddio data sydd wedi\'u cadw yn eich cyfrif %1$s.</string>
+  <!-- Summary for the sync preference category. -->
+  <string name="preferences_sync_category_summary">Rheoli\'r hyn sy\'n cydweddu ar eich holl ddyfeisiau cysylltiedig</string>
+  <!-- Summary for the sync preference category, when user has disabled all synchronisation items. -->
+  <string name="preferences_sync_category_no_engine_selected_summary">Dydych chi ddim yn cydweddu dim. Dewiswch beth i\'w gydweddu ar draws eich dyfeisiau.</string>
   <!-- Preference for syncing history -->
   <string name="preferences_sync_history">Hanes</string>
   <!-- Preference for syncing bookmarks -->
@@ -1157,6 +1175,10 @@
   <string name="preferences_sign_out">Allgofnodi</string>
   <!-- Preference displays and allows changing current FxA device name -->
   <string name="preferences_sync_device_name">Enw dyfais</string>
+  <!-- Preference category for Device name -->
+  <string name="preferences_device_name_category">Enw dyfais</string>
+  <!-- Label for the Preference that displays and allows changing current device name on Mozilla Account -->
+  <string name="preferences_sync_change_device_name">Newid enw dyfais</string>
   <!-- Text shown when user enters empty device name -->
   <string name="empty_device_name_error">Nid oes modd i’r enw dyfais fod yn wag.</string>
   <!-- Label indicating that sync is in progress -->
@@ -1276,8 +1298,12 @@
   <string name="preference_simple_toolbar">Syml</string>
   <!-- Preference for using expanded toolbar -->
   <string name="preference_expanded_toolbar">Estynedig</string>
-  <!-- Preference description indicating the toolbar location preference is disabled when the tab strip is enabled -->
-  <string name="preference_toolbar_pref_disabled_explanation">Rhaid i\'r bar cyfeiriad fod ar y brig pan fydd y bar tabiau\'n cael ei ddangos.</string>
+  <!-- Preference for changing where the search bar is positioned on the homepage, shown when the user has set the address bar to be displayed at the top of the screen -->
+  <string name="preferences_homepage_search_location">Lleoliad chwilio\'r tudalen gartref</string>
+  <!-- Preference for showing the homepage search bar in the middle of the homepage -->
+  <string name="preference_homepage_search_location_middle">Canol</string>
+  <!-- Preference for showing the homepage search bar at the top of the homepage (combined with the address bar, already displayed at the top) -->
+  <string name="preference_homepage_search_location_top">Brig</string>
   <!-- New tab shortcut in toolbar customization -->
   <string name="toolbar_customize_shortcut_new_tab">Agor tab newydd</string>
   <!-- Share shortcut in toolbar customization -->
@@ -1359,6 +1385,8 @@
   <string name="library_desktop_bookmarks_unfiled">Nodau Tudalen Eraill</string>
   <!-- Option in Library to open History page -->
   <string name="library_history">Hanes</string>
+  <!-- Content description (not visible, for screen readers etc.) for the check mark that replaces a site's icon in History and Recently closed tabs when the item is selected -->
+  <string name="library_item_selected_content_description">Dewiswyd</string>
   <!-- Settings Page Title -->
   <string name="settings_title">Gosodiadau</string>
   <!-- Content description (not visible, for screen readers etc.): "Close button for library settings" -->
@@ -1409,8 +1437,8 @@
     Title of preference for tabs management
   -->
   <string name="preferences_tabs">Tabiau</string>
-  <!-- Title of preference that allows a user to specify the tab view -->
-  <string name="preferences_tab_view">Golwg tabiau</string>
+  <!-- Title of preference that allows a user to specify the tab layout -->
+  <string name="preferences_tab_layout">Cynllun tabiau</string>
   <!-- Option for a list tab view -->
   <string name="tab_view_list">Rhestr</string>
   <!-- Option for a grid tab view -->
@@ -1458,15 +1486,19 @@
   <!-- Summary for homepage preference indicating opening the homepage when re-opening the app after four hours of inactivity -->
   <string name="opening_screen_after_four_hours_of_inactivity_summary">Agor ar y dudalen cartref ar ôl pedair awr</string>
   <!--
-    Inactive tabs
+    Tab organization
 
-    Category header of a preference that allows a user to enable or disable the inactive tabs feature
+    Category header for the preferences that control how tabs are organized
   -->
-  <string name="preferences_inactive_tabs">Symud hen dabiau i anweithredol</string>
-  <!-- Title of inactive tabs preference -->
+  <string name="preferences_tab_organization">Trefnu tabiau</string>
+  <!-- Title of the preference that allows a user to enable or disable the inactive tabs feature -->
+  <string name="preferences_inactive_tabs_toggle_title">Tabiau anweithredol</string>
+  <!-- Summary of the preference that allows a user to enable or disable the inactive tabs feature. -->
   <string name="preferences_inactive_tabs_title">Mae tabiau dydych chi heb edrych arnyn nhw ers pythefnos yn cael eu symud i’r adran anweithredol.</string>
-  <!-- Title for the preference to enable or disable the tab groups feature -->
-  <string name="preferences_tab_groups_feature">Galluogi Grwpiau Tabiau</string>
+  <!-- Title of the preference that allows a user to enable or disable the tab groups feature -->
+  <string name="preferences_tab_groups_title">Grwpiau tabiau</string>
+  <!-- Summary of the preference that allows a user to enable or disable the tab groups feature -->
+  <string name="preferences_tab_groups_description">Trefnwch eich tabiau yn grwpiau y mae modd chi eu henwi a\'u cadw.</string>
   <!--
     Privacy report
 
@@ -1586,8 +1618,6 @@
   <string name="open_tabs_menu">Dewislen tabiau agored</string>
   <!-- Content description (not visible, for screen readers etc.): Return to tab manager -->
   <string name="tab_manager_search_bar_back_content_description">Nôl i\'r rheolwr tabiau</string>
-  <!-- Open tabs menu item to save tabs to collection -->
-  <string name="tabs_menu_save_to_collection1">Cadw tabiau i Gasgliad</string>
   <!-- Text for the menu button to delete a collection -->
   <string name="collection_delete">Dileu casgliad</string>
   <!-- Text for the menu button to rename a collection -->
@@ -1698,6 +1728,11 @@
   <string name="close_tab_and_delete_group_confirmation_dialog_cancel">Na</string>
   <!-- Content description for the three dot button next to a tab group" -->
   <string name="tab_group_three_dot_button_content_description">Rhagor o ddewisiadau</string>
+  <!--
+    Content description for the Expand button on the contracted menu for a tab group:
+    when tapped, tabs are displayed in an expanded grid or list view, taking up the full screen.
+  -->
+  <string name="tab_groups_strip_expand_group_content_description">Ehangu i ddangos tabiau ar sgrin lawn</string>
   <!-- Text shown on the edit button for a tab group on the three dot menu -->
   <string name="tab_group_three_dot_menu_edit">Golygu</string>
   <!-- Text shown on the ungroup button for a tab group on the three dot menu -->
@@ -1765,16 +1800,6 @@
     %1$d is the number of bookmarks selected
   -->
   <string name="history_multi_select_title">%1$d wedi’u dewis</string>
-  <!-- Text for the header that groups the history for today -->
-  <string name="history_today">Heddiw</string>
-  <!-- Text for the header that groups the history for yesterday -->
-  <string name="history_yesterday">Ddoe</string>
-  <!-- Text for the header that groups the history the past 7 days -->
-  <string name="history_7_days">7 diwrnod diwethaf</string>
-  <!-- Text for the header that groups the history the past 30 days -->
-  <string name="history_30_days">30 diwrnod diwethaf</string>
-  <!-- Text for the header that groups the history older than the last month -->
-  <string name="history_older">Hŷn</string>
   <!-- Text shown when no history exists -->
   <string name="history_empty_message">Dim hanes yma</string>
   <!--
@@ -1957,6 +1982,8 @@
   <string name="download_search_no_results_found">Heb ganfod canlyniadau</string>
   <!-- Text for the "Select all" button, which selects all downloaded items in the downloads list. -->
   <string name="download_select_all_items">Dewis y cyfan</string>
+  <!-- Shown in the downloads list in place of a website name when a file came from a data: or blob: URL that has no website address. "data" refers to the data: URL scheme. -->
+  <string name="download_item_source_data">(data)</string>
   <!--
     Downloads Content Type Filters
 
@@ -2005,8 +2032,6 @@
   <string name="webcompat_reporter_label_mandatory_description">Disgrifiwch y broblem yn fanwl i\'n helpu ni i ymchwilio i\'r mater</string>
   <!-- The label/title of a optional field in the Web Compat Reporter feature for adding additional information. -->
   <string name="webcompat_reporter_label_optional_description">Disgrifiwch y broblem yn fanwl i\'n helpu ni i ymchwilio i\'r mater (dewisol)</string>
-  <!-- The button text for the cancel button to leave the Web Compat Reporter feature. -->
-  <string name="webcompat_reporter_cancel">Na</string>
   <!-- The button text for the send button to submit the provided form data. -->
   <string name="webcompat_reporter_send_report">Anfonwch adroddiad</string>
   <!-- Text for a snackbar to confirm the successful submission of a WebCompat report. -->
@@ -2407,12 +2432,12 @@
   <string name="sync_sign_in">Mewngofnodi i Sync</string>
   <!-- An option from the share dialog to send link to all other sync devices -->
   <string name="sync_send_to_all">Anfon at bob dyfais</string>
-  <!-- Text displayed when no other sync devices are available for link sharing -->
-  <string name="sync_no_devices_available">Dim dyfeisiau ar gael</string>
-  <!-- Text displayed when no other sync devices are available for link sharing. -->
-  <string name="sync_no_devices_available_description">Bydd unrhyw ddyfeisiau sydd wedi mewngofnodi ac yn cysoni i\'r cyfrif hwn yn ymddangos yma.</string>
   <!-- An option from the share dialog to reconnect to sync -->
   <string name="sync_reconnect">Ailgysylltu â Sync</string>
+  <!-- Label for the button in the share dialog that sends the tab to the selected sync devices -->
+  <string name="sync_send_to_selected_devices">Anfon</string>
+  <!-- Content description announced when a device is selected in the share dialog -->
+  <string name="send_to_devices_device_selected_content_description">Dewiswyd</string>
   <!-- Text displayed when sync is offline and cannot be accessed -->
   <string name="sync_offline">All-lein</string>
   <!-- An option to connect additional devices -->
@@ -2445,10 +2470,14 @@
   <string name="sync_send_tab_empty_state_title">Dim dyfeisiau wedi\'u cysylltu</string>
   <!-- Send tab to synced devices: Empty state message - Displayed when the user has no synced devices -->
   <string name="sync_send_tab_empty_state_description" tools:ignore="BrandUsage">I anfon tab, mewngofnodwch i Firefox ar o leiaf un ddyfais arall.</string>
+  <!-- Send tab to synced devices: Empty state link - Displayed when the user has no synced devices -->
+  <string name="sync_send_tab_empty_state_link">Dysgwch sut i gysylltu dyfais</string>
   <!-- Send tab to synced devices: Connectivity Error title -->
   <string name="sync_send_tab_error_connection_title">Gwiriwch eich cysylltiad rhyngrwyd</string>
   <!-- Send tab to synced devices: Connectivity Error message - Suggested user action after internet connection has been established -->
   <string name="sync_send_tab_error_connection_text">Yna ceisiwch ail-anfon eich tab.</string>
+  <!-- Send tab to synced devices: Connectivity Error button - When tapped, refreshes the list of connected devices. -->
+  <string name="sync_send_tab_error_connection_button">Ceisio eto</string>
   <!--
     Notifications
 
@@ -2524,8 +2553,6 @@
   <string name="qr_scanner_dialog_invalid">Dyw’r cyfeiriad gwe ddim yn ddilys.</string>
   <!-- QR code scanner prompt dialog positive option when there is an error -->
   <string name="qr_scanner_dialog_invalid_ok">Iawn</string>
-  <!-- Tab collection deletion prompt dialog message. %1$s is the collection name. -->
-  <string name="tab_collection_dialog_message">Ydych chi’n siŵr eich bod am ddileu %1$s?</string>
   <!-- Sample text for accessibility font size -->
   <string name="accessibility_text_size_sample_text_1">Testun enghreifftiol yw hwn. Mae yma i ddangos sut bydd testun yn ymddangos pan fyddwch chi’n cynyddu neu’n lleihau maint y gosodiad hwn.</string>
   <!-- Summary for Accessibility Text Size Scaling Preference -->
@@ -2626,11 +2653,17 @@
   <!-- Text shown for settings option for sign with pairing -->
   <string name="sign_in_with_camera">Mewngofnodi gyda’ch camera</string>
   <!-- Text shown for settings option for sign with email -->
-  <string name="sign_in_with_email">Defnyddio e-bost yn lle hynny</string>
+  <string name="sign_in_with_email">Defnyddio ebost yn lle hynny</string>
   <!-- Text shown for settings option for create new account text.'Firefox' intentionally hardcoded here. -->
   <string name="sign_in_create_account_text" tools:ignore="BrandUsage"><![CDATA[Dim cyfrif? <u>Crëwch un</u> i gydweddu Firefox rhwng dyfeisiau.]]></string>
   <!-- Text shown in confirmation dialog to sign out of account. %s is the name of the app (for example "Firefox"). -->
   <string name="sign_out_confirmation_message_2">Bydd %s yn peidio â chydweddu eich cyfrif ond ni fydd yn dileu eich data pori ar y ddyfais hon.</string>
+  <!-- Title of the confirmation dialog shown when the user signs out of their account -->
+  <string name="sign_out_dialog_title">Allgofnodi o\'ch cyfrif?</string>
+  <!-- Body of the confirmation dialog shown when the user signs out of their account -->
+  <string name="sign_out_dialog_message">Mae data sydd wedi\'u cydweddu\'n aros yn eich cyfrif.</string>
+  <!-- Text for the primary action button of the confirmation dialog shown when the user signs out of their account -->
+  <string name="sign_out_dialog_confirm_button">Allgofnodi</string>
   <!-- Option to continue signing out of account shown in confirmation dialog to sign out of account -->
   <string name="sign_out_disconnect">Datgysylltu</string>
   <!-- Option to cancel signing out shown in confirmation dialog to sign out of account -->
@@ -3034,17 +3067,17 @@
   -->
   <string name="preferences_email_masks">Arallenwau e-byst</string>
   <!-- Title for the Suggest Email Masks toggle -->
-  <string name="preferences_email_masks_suggest_title">Awgrymu arallenwau e-bost</string>
+  <string name="preferences_email_masks_suggest_title">Awgrymu arallenwau ebost</string>
   <!-- Summary for the Suggest Email Masks toggle. -->
-  <string name="preferences_email_masks_suggest_summary">Cuddiwch eich e-bost go iawn i ddiogelu eich blwch derbyn rhag sbam. Dyw rhai gwefannau ddim yn cefnog arallenwau.</string>
+  <string name="preferences_email_masks_suggest_summary">Cuddiwch eich ebost go iawn i ddiogelu eich blwch derbyn rhag sbam. Dyw rhai gwefannau ddim yn cefnog arallenwau.</string>
   <!-- Text that links to additional information about the Email Masks -->
   <string name="preferences_email_masks_suggest_learn_more">Dysgu rhagor</string>
   <!-- Title for the Manage Email Masks links to Firefox Relay dashboard -->
-  <string name="preferences_email_masks_manage_title">Rheoli arallenwau e-bost</string>
+  <string name="preferences_email_masks_manage_title">Rheoli arallenwau ebost</string>
   <!-- The message displayed when a user has used all of their free-tier email masks, so now the application will choose an existing one at random. -->
-  <string name="email_masks_max_free_tier_reached">Rydych chi wedi defnyddio\'ch 5 arallenw e-bost am ddim, felly rydym wedi dewis un i chi ei ailddefnyddio.</string>
+  <string name="email_masks_max_free_tier_reached">Rydych chi wedi defnyddio\'ch 5 arallenw ebost am ddim, felly rydym wedi dewis un i chi ei ailddefnyddio.</string>
   <!-- The message displayed when there was an error with the email mask or Firefox Account services. -->
-  <string name="email_masks_error_retrieving_masks">Does dim arallenwau e-bost ar gael ar hyn o bryd. Ceisiwch eto mewn ychydig funudau.</string>
+  <string name="email_masks_error_retrieving_masks">Does dim arallenwau ebost ar gael ar hyn o bryd. Ceisiwch eto mewn ychydig funudau.</string>
   <!--
     Firefox browser VPN (a browser-only proxy, distinct from the Mozilla VPN service)
 
@@ -3055,8 +3088,6 @@
   <string name="preferences_ip_protection_beta_badge_label">BETA</string>
   <!-- Title for the browser VPN settings screen (displayed in the app bar) -->
   <string name="ip_protection_settings_title">VPN cynhenid</string>
-  <!-- Title for the browser VPN settings screen (displayed in the app bar) -->
-  <string name="ip_protection_title">VPN</string>
   <!-- Label for the browser VPN toggle on the settings screen -->
   <string name="ip_protection_toggle_label">VPN</string>
   <!-- Content description for the browser VPN settings screen top bar back button -->
@@ -3151,8 +3182,6 @@
   <string name="ip_protection_data_limit_reached_snackbar">Defnyddiwyd %1$d GB o ddata VPN. Bydd mynediad yn ailgychwyn mis nesaf.</string>
   <!-- Snackbar (in-app pop-up notification) action button text that takes the user to the VPN settings screen. -->
   <string name="ip_protection_open_settings_snackbar_action">Gosodiadau</string>
-  <!-- Snackbar (in-app pop-up notification) action button text that takes the user to the VPN settings screen. -->
-  <string name="ip_protection_data_limit_reached_snackbar_action">Gosodiadau</string>
   <!-- Description shown on the browser VPN settings screen prompting the user to turn the VPN on. -->
   <string name="ip_protection_settings_description" tools:ignore="UnusedResources">Trowch VPN ymlaen i wneud eich pori yn fwy preifat ac yn anoddach ei olrhain.</string>
   <!-- Title shown on the browser VPN settings screen for location selection section. -->
@@ -3212,7 +3241,7 @@
   <!-- Preference for saving and filling addresses -->
   <string name="preferences_addresses_save_and_autofill_addresses_2">Cadw a llanw cyfeiriadau</string>
   <!-- Preference summary for saving and filling address data -->
-  <string name="preferences_addresses_save_and_autofill_addresses_summary_2">Yn cynnwys rhifau ffôn a chyfeiriadau e-bost</string>
+  <string name="preferences_addresses_save_and_autofill_addresses_summary_2">Yn cynnwys rhifau ffôn a chyfeiriadau ebost</string>
   <!-- Preference option for syncing addresses across devices. This is displayed when the user is not signed into sync -->
   <string name="preferences_addresses_sync_addresses_across_devices">Cydweddu cyfeiriadau ar draws dyfeisiau</string>
   <!-- Preference option for syncing addresses across devices. This is displayed when the user is signed into sync -->
@@ -3263,6 +3292,14 @@
   <string name="credit_cards_warning_dialog_set_up_now">Gosod nawr</string>
   <!-- Negative button to ignore warning dialog if users have no device authentication set up -->
   <string name="credit_cards_warning_dialog_later">Yn hwyrach</string>
+  <!-- Title of the dialog shown on Android Automotive OS (in cars) when users have no device authentication set up and try to access their saved passwords, payment methods, or sign in to their account -->
+  <string name="automotive_authentication_setup_dialog_title">Diogelwch eich data sensitif</string>
+  <!-- Message of the dialog shown on Android Automotive OS (in cars) when users have no device authentication set up and try to access their saved passwords, payment methods, or sign in to their account -->
+  <string name="automotive_authentication_setup_dialog_message">Gosodwch batrwm clo dyfais, PIN, neu gyfrinair i amddiffyn eich data sensitif wedi\'u cadw, rhag cael mynediad ato os yw rhywun arall yn gyrru\'ch car.</string>
+  <!-- Primary button on the dialog shown on Android Automotive OS (in cars). Tapping it directs users to the device settings to set up a device lock -->
+  <string name="automotive_authentication_setup_dialog_set_up_now">Gosod nawr</string>
+  <!-- Secondary button of the dialog shown on Android Automotive OS (in cars). Tapping closes the dialogue and cancels the action that triggered the dialogue. -->
+  <string name="automotive_authentication_setup_dialog_cancel">Diddymu</string>
   <!-- Title of PIN verification dialog to direct users to re-enter their device credentials to access their credit cards -->
   <string name="credit_cards_biometric_prompt_message_pin">Datgloi’ch dyfais</string>
   <!-- Message displayed in biometric prompt for authentication, before allowing users to use their stored payment method information -->
@@ -3292,7 +3329,7 @@
   <!-- The header for the phone number of an address -->
   <string name="addresses_phone">Ffôn</string>
   <!-- The header for the email of an address -->
-  <string name="addresses_email">E-bost</string>
+  <string name="addresses_email">Ebost</string>
   <!-- Label for an address field (e.g. mailing address) used as part of the form autofill feature. This specific field is used for addresses in Iran, Mexico. -->
   <string name="addresses_neighborhood" tools:ignore="UnusedResources">Cymdogaeth</string>
   <!-- Label for an address field (e.g. mailing address) used as part of the form autofill feature. The Village or Township field, specific to Malaysia is crucial for addresses in rural areas. -->
@@ -3405,10 +3442,6 @@
   <string name="browser_menu_remove_from_shortcuts">Tynnu o’r llwybrau byr</string>
   <!-- Message in delete confirmation dialog for password -->
   <string name="login_deletion_confirmation_2">Ydych chi\'n siŵr eich bod am ddileu\'r cyfrinair hwn?</string>
-  <!-- Positive action of a dialog asking to delete -->
-  <string name="dialog_delete_positive">Dileu</string>
-  <!-- Negative action of a dialog asking to delete login -->
-  <string name="dialog_delete_negative">Na</string>
   <!-- The page title for editing a saved password. -->
   <string name="edit_2">Golygu cyfrinair</string>
   <!-- The page title for adding new password. -->
@@ -3898,17 +3931,14 @@
   <string name="protection_panel_etp_toggle_enabled_description_2">Os yw rhywbeth yn edrych fel ei fod wedi torri ar y wefan hon, ceisiwch ei ddiffodd.</string>
   <!-- Description text for the Enhanced Tracking Protection toggle when tracking protection is disabled. -->
   <string name="protection_panel_etp_toggle_disabled_description_2">Argymhellwn i chi droi diogelwch rhag tracio ymlaen.</string>
-  <!--
-    Text for displaying the total number of trackers blocked in the protection panel.
-    %d is a placeholder for the number of trackers blocked.
-  -->
-  <string name="protection_panel_num_trackers_blocked">Tracwyr wedi\'u rhwystro: %d</string>
   <!-- Text for when tracking protection is disabled and no trackers are blocked. -->
   <string name="protection_panel_etp_disabled_no_trackers_blocked">Dyw tracwyr heb eu rhwystro</string>
   <!-- Link text to navigate to privacy and security settings from the protection panel. -->
   <string name="protection_panel_privacy_and_security_settings_2">Gosodiadau Preifatrwydd</string>
   <!-- Title text for the protection panel permissions section. -->
   <string name="protection_panel_permissions_title">Caniatâd</string>
+  <!-- Certificate panel - Title of the section that contains the website's certificate information (issued to, issued by, etc.) as verified by Firefox (thus guaranteeing the HTTPS connection is secure) -->
+  <string name="certificate_details_panel_secure_connection_title">Cysylltiadau diogel</string>
   <plurals name="trackers_blocked_panel_total_num_trackers_blocked_2">
     <!--
       Text for displaying the total number of trackers blocked in the trackers blocked panel.
@@ -4503,6 +4533,79 @@
   <!-- Link text for terms_of_use_prompt_body_line_two_alternative that links to a site with more information about the Terms of Use -->
   <string name="terms_of_use_prompt_body_line_two_alternative_link" tools:ignore="UnusedResources">yma</string>
   <!--
+    Sports widget
+
+    Label shown on the sports widget scoreboard when a match is currently being played live.
+  -->
+  <string name="wrex_widget_match_live">BYW</string>
+  <!-- Label shown on the sports widget match status badge when the start of a match has been delayed. -->
+  <string name="wrex_widget_match_delayed">Rhedeg yn hwyr</string>
+  <!-- Label shown on the sports widget match status badge when a match has been suspended after it started. -->
+  <string name="wrex_widget_match_suspended">Wedi\'i hatal</string>
+  <!-- Label shown on the sports widget match status badge when a match has been postponed to a later date. -->
+  <string name="wrex_widget_match_postponed">Wedi\'i ohirio</string>
+  <!-- Sports widget action label to refresh match data after an error. -->
+  <string name="wrex_widget_error_refresh">Adnewyddu</string>
+  <!-- Sports widget menu item to view the team's match results. -->
+  <string name="wrex_widget_results">Canlyniadau</string>
+  <!-- Sports widget menu item to view the league standings table. -->
+  <string name="wrex_widget_standings">Presennol</string>
+  <!-- Sports widget menu item to browse the team's wallpapers. -->
+  <string name="wrex_widget_wallpapers">Papurau wal</string>
+  <!-- Sports widget menu item to remove the widget from the homepage. -->
+  <string name="wrex_widget_remove_widget">Dileu Teclyn</string>
+  <!-- Sports widget match status label shown at full-time (abbreviated) - indicates the match has ended, after regulation and extra time have been played -->
+  <string name="wrex_widget_match_full_time_short">FT</string>
+  <!-- Sports widget match status label shown during half-time of a match. -->
+  <string name="wrex_widget_match_half_time">Hanner amser</string>
+  <!-- Sports widget match status label shown during extra time of a match (abbreviated) -->
+  <string name="wrex_widget_match_extra_time_short">ET</string>
+  <!-- Sports widget match status label shown during penalties of a match. -->
+  <string name="wrex_widget_match_penalties">Ciciau cosb</string>
+  <!-- Content description (for accessibility, not displayed) for the overflow (more options) menu button on the sports widget card. -->
+  <string name="wrex_widget_more_options_content_description">Rhagor o ddewisiadau</string>
+  <!--
+    Content description (for accessibility, not displayed) announcing a soccer match.
+    %1$s is the home team name, %2$s is the away team name, %3$s is trailing context
+    (e.g. formatted score "1 - 2 (Full time)", upcoming match info "Jun 19 5:00 PM",
+    or a match status like "Full time").
+  -->
+  <string name="wrex_widget_match_content_description">%1$s yn erbyn %2$s, %3$s</string>
+  <!--
+    Content description (for accessibility, not displayed) used for the sports widget card header announcing a live match.
+    %s is the name of the competition the match belongs to (e.g. "FA Cup").
+  -->
+  <string name="wrex_widget_live_game_content_description">%s, gêm fyw</string>
+  <!--
+    Content description (for accessibility, not displayed) announcing a live score.
+    %1$s is the home team name, %2$d is the home team score, %3$s is the away team name, %4$d is the away team score,
+    and %5$s is the match elapsed time (e.g. 72 minutes).
+  -->
+  <string name="wrex_widget_live_score_content_description">%1$s %2$d, %3$s %4$d, %5$s, yn fyw</string>
+  <!--
+    Content description (for accessibility, not displayed) announcing the elapsed minutes of a live match.
+    %1$s is the clock value, which may be a plain number (e.g. "72") or include extra time (e.g. "90+3").
+  -->
+  <string name="wrex_widget_match_elapsed_minutes">Wedi mynd heibio mewn munudau: %1$s</string>
+  <!--
+    Content description (for accessibility, not displayed) for a paginated item.
+    %1$s is the name of the competition the match belongs to (e.g. "FA Cup"),
+    %2$d is the current page number, and %3$d is the total number of pages.
+  -->
+  <string name="wrex_widget_page_position_content_description">%1$s, tudalen %2$d o %3$d</string>
+  <!-- Sports widget error card title shown when the user is offline. -->
+  <string name="wrex_widget_error_connection_offline_title">Mae\'n debyg eich bod all-lein</string>
+  <!-- Sports widget error card description shown when the user is offline. -->
+  <string name="wrex_widget_error_connection_offline_description">Gwiriwch eich cysylltiad rhyngrwyd a rhowch gynnig arall arni.</string>
+  <!-- Sports widget error card title shown when match data fails to load. -->
+  <string name="wrex_widget_error_load_failed_title">Methu â dangos gwybodaeth cyfatebol ar hyn o bryd</string>
+  <!-- Sports widget error card description suggesting to refresh after match information could not be displayed. -->
+  <string name="wrex_widget_error_try_refreshing">Ceisiwch adnewyddu neu dewch nôl yn nes ymlaen.</string>
+  <!-- Sports widget error card title shown when the latest match results fail to load. -->
+  <string name="wrex_widget_error_results_load_failed_title">Methu â dangos canlyniadau ar hyn o bryd</string>
+  <!-- Content description (for accessibility, not displayed) for teams which have not yet been determined in the match schedule. -->
+  <string name="wrex_widget_team_to_be_determined">Tîm i\'w bennu</string>
+  <!--
     Privacy notice homepage banner
 
     A message we show the user on the homepage when there is a new version of the privacy notice. 'Firefox' is intentionally hardcoded.
@@ -4558,6 +4661,18 @@
   <string name="lens_camera_mode_qr">Sganiwr QR</string>
   <!-- Toast shown when the user picks an image from the gallery in QR mode but no QR code is found in it -->
   <string name="lens_camera_qr_no_code_found">Heb ganfod cod QR yn y llun</string>
+  <!-- Status shown under an image picked from the gallery or taken with the camera while it is being sent to Google Lens for a visual search -->
+  <string name="lens_camera_loading_status">Yn chwilio am hyn</string>
+  <!-- Button shown under an image picked from the gallery or taken with the camera while it is being sent to Google Lens. Tapping it stops the search and returns to the camera. -->
+  <string name="lens_camera_loading_cancel_button">Diddymu</string>
+  <!-- Snackbar message shown when an image picked from the gallery or taken with the camera could not be opened or read, so it was never sent to Google Lens. Shown after returning to the camera. -->
+  <string name="lens_camera_image_load_failed_v2">Methu llwytho\'r ddelwedd hon.</string>
+  <!-- Snackbar message shown when an image picked from the gallery could not be opened or read, so it was never sent to Google Lens. Shown after returning to the camera. -->
+  <string name="lens_camera_image_load_failed">Methu llwytho\'r ddelwedd hon. Rhowch gynnig ar un gwahanol.</string>
+  <!-- Snackbar message shown when an image picked from the gallery or taken with the camera could not be searched because of a network problem or an error from Google Lens. Shown after returning to the camera, next to the lens_camera_upload_failed_retry_button action. -->
+  <string name="lens_camera_upload_failed">Methu cael canlyniadau gan Google Lens</string>
+  <!-- Action in the snackbar shown when an image picked from the gallery or taken with the camera could not be searched with Google Lens. Tapping it searches the same image again. -->
+  <string name="lens_camera_upload_failed_retry_button">Ceisiwch eto</string>
   <!-- Title of the bottom sheet shown the first time the user opens the Google Lens camera screen -->
   <string name="lens_opt_out_title">Dod o hyd iddo gyda Google Lens</string>
   <!-- Description of the bottom sheet shown the first time the user opens the Google Lens camera screen -->
@@ -4617,7 +4732,7 @@
 
     Content description for accessibility (used by screen readers): Description for the button that triggers the start of a signature workflow on the PDF displayed on the screen.
   -->
-  <string name="pdf_tools_sign_content_description">Arwyddo\'r PDF</string>
+  <string name="pdf_tools_sign_content_description_2">Ychwanegu llofnod</string>
   <!-- Content description for accessibility (used by screen readers): Description of the button that downloads the PDF displayed on the screen to the user's device. -->
   <string name="pdf_tools_download_content_description">Llwytho PDF i Lawr</string>
   <!-- Content description for accessibility (used by screen readers): Description for the button that opens the printing dialogue window for the PDF displayed on the screen. -->
@@ -4638,12 +4753,24 @@
   <string name="pdf_tools_signature_clear_button">Clirio</string>
   <!-- The text for the button that adds the signature the user has typed to the PDF. -->
   <string name="pdf_tools_signature_add_button">Ychwanegu</string>
+  <!-- Content description for accessibility (used by screen readers): Description for the loading indicator when a signature is in the process of being added to a PDF. -->
+  <string name="pdf_tools_signature_adding_content_description">Ychwanegu llofnod</string>
+  <!--
+    Listen to page
+
+    Content description for the reader view panel: a group of buttons floating over the content, which allow customizing the reader view or activating the Listen to Page feature
+  -->
+  <string name="reader_mode_panel_content_description_2">Dewisiadau Golwg Darllenydd</string>
   <!--
     Listen to page
 
     Content description for the reader mode panel: a group of buttons floating over the content
   -->
   <string name="reader_mode_panel_content_description">Dewisiadau Modd Darllenydd</string>
-  <!-- Content description for the button in reader mode panel that turns on the read aloud feature (playback of content begins when button is pressed) -->
+  <!-- Content description for the button in the reader view panel that turns on the Listen to Page feature (playback of content begins when button is pressed) -->
   <string name="reader_mode_panel_listen_content_description">Darllen yn Uchel</string>
+  <!-- Content description for media player displayed in Reader view when the Listen to Page (Read Aloud) feature is selected -->
+  <string name="reader_mode_panel_media_player_content_description">Chwaraewr Cyfryngau</string>
+  <!-- Content description for the reader view button Reader view facilitates readability and has a Listen to Page feature. Button icon is a document with headphones, and is displayed next to the page URL when the feature is available. -->
+  <string name="browser_menu_read_or_listen">Golwg Darllenydd, darllen neu wrando ar dudalen</string>
 </resources>

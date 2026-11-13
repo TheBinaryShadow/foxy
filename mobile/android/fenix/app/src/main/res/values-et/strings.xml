@@ -57,9 +57,11 @@
   <string name="home_bookmarks_menu_item_remove">Eemalda</string>
   <!-- About content. %1$s is the name of the app (for example "Firefox"). -->
   <string name="about_content" tools:ignore="BrandUsage">%1$s on Mozilla poolt toodetud.</string>
-  <!-- Private Browsing -->
-  <string name="private_browsing_common_myths">Levinumad müüdid privaatse veebilehitsemise kohta</string>
-  <!-- Text to be announced by the accessibility service to inform the user that the private browsing mode is currently active. -->
+  <!--
+    Private Browsing
+
+    Text to be announced by the accessibility service to inform the user that the private browsing mode is currently active.
+  -->
   <string name="private_browsing_a11y_session_announcement">Privaatse veebilehitsemise seanss</string>
   <!--
     True Private Browsing Mode
@@ -147,11 +149,7 @@
   <string name="recently_visited_menu_item_remove">Eemalda</string>
   <!-- Content description for the button which navigates the user to show all of their history. -->
   <string name="past_explorations_show_all_content_description_2">Kuva varasemat ajalugu</string>
-  <!--
-    Browser Fragment
-
-    Content description (not visible, for screen readers etc.): Navigate backward (browsing history)
-  -->
+  <!-- Content description (not visible, for screen readers etc.): Navigate backward (browsing history) -->
   <string name="browser_menu_back">Tagasi</string>
   <!-- Content description (not visible, for screen readers etc.): Navigate forward (browsing history) -->
   <string name="browser_menu_forward">Edasi</string>
@@ -206,8 +204,6 @@
   <string name="browser_menu_open_app_link">Ava äpis</string>
   <!-- Browser menu button to show reader view appearance controls e.g. the used font type and size -->
   <string name="browser_menu_customize_reader_view_2">Kohanda lugemisvaadet</string>
-  <!-- Browser menu label that creates a private tab -->
-  <string name="browser_menu_new_private_tab">Uus privaatne kaart</string>
   <!-- Browser menu label that navigates to the Password screen -->
   <string name="browser_menu_passwords">Paroolid</string>
   <!-- Browser menu label that bookmarks the currently visited page -->
@@ -295,10 +291,8 @@
   <!--
     Preferences
 
-    Title for the settings page
+    Preference category for general settings
   -->
-  <string name="settings">Sätted</string>
-  <!-- Preference category for general settings -->
   <string name="preferences_category_general">Üldine</string>
   <!-- Preference category for all links about Fenix -->
   <string name="preferences_category_about">Teave</string>
@@ -626,8 +620,6 @@
     Title of preference for tabs management
   -->
   <string name="preferences_tabs">Kaardid</string>
-  <!-- Title of preference that allows a user to specify the tab view -->
-  <string name="preferences_tab_view">Kaartide vaade</string>
   <!-- Option for a list tab view -->
   <string name="tab_view_list">Nimekiri</string>
   <!-- Option for a grid tab view -->
@@ -666,13 +658,7 @@
   <string name="close_tabs_after_one_month_summary">Suletakse ühe kuu pärast</string>
   <!-- Summary for homepage preference indicating opening the homepage when re-opening the app after four hours of inactivity -->
   <string name="opening_screen_after_four_hours_of_inactivity_summary">Pärast neljatunnist tegevusetust avatakse avaleht</string>
-  <!--
-    Inactive tabs
-
-    Category header of a preference that allows a user to enable or disable the inactive tabs feature
-  -->
-  <string name="preferences_inactive_tabs">Vanad kaardid liigutatakse mitteaktiivsete alla</string>
-  <!-- Title of inactive tabs preference -->
+  <!-- Summary of the preference that allows a user to enable or disable the inactive tabs feature. -->
   <string name="preferences_inactive_tabs_title">Kaardid, mida sa pole vaadanud 2 nädalat, liigutatakse mitteaktiivsete kaartide alla.</string>
   <!--
     Studies
@@ -710,8 +696,6 @@
   <string name="close_tab_title">Sulge kaart %s</string>
   <!-- Content description (not visible, for screen readers etc.): Opens the open tabs menu when pressed -->
   <string name="open_tabs_menu">Ava kaartide menüü</string>
-  <!-- Open tabs menu item to save tabs to collection -->
-  <string name="tabs_menu_save_to_collection1">Salvesta kaardid kollektsiooni</string>
   <!-- Text for the menu button to delete a collection -->
   <string name="collection_delete">Kustuta kollektsioon</string>
   <!-- Text for the menu button to rename a collection -->
@@ -743,16 +727,6 @@
     %1$d is the number of bookmarks selected
   -->
   <string name="history_multi_select_title">%1$d valitud</string>
-  <!-- Text for the header that groups the history for today -->
-  <string name="history_today">Täna</string>
-  <!-- Text for the header that groups the history for yesterday -->
-  <string name="history_yesterday">Eile</string>
-  <!-- Text for the header that groups the history the past 7 days -->
-  <string name="history_7_days">Viimased 7 päeva</string>
-  <!-- Text for the header that groups the history the past 30 days -->
-  <string name="history_30_days">Viimased 30 päeva</string>
-  <!-- Text for the header that groups the history older than the last month -->
-  <string name="history_older">Vanemad</string>
   <!-- Text shown when no history exists -->
   <string name="history_empty_message">Ajalugu puudub</string>
   <!-- Text for the snackbar to confirm that a single download item has been removed. %1$s is the name of the download item. -->
@@ -823,8 +797,6 @@
   <string name="webcompat_reporter_label_url">URL</string>
   <!-- The error message of the URL text field when an invalid URL has been entered. -->
   <string name="webcompat_reporter_url_error_invalid">Palun sisesta korrektne URL</string>
-  <!-- The button text for the cancel button to leave the Web Compat Reporter feature. -->
-  <string name="webcompat_reporter_cancel">Loobu</string>
   <!--
     Crashes
 
@@ -1108,8 +1080,6 @@
   <string name="qr_scanner_dialog_invalid">Veebiaadress pole korrektne.</string>
   <!-- QR code scanner prompt dialog positive option when there is an error -->
   <string name="qr_scanner_dialog_invalid_ok">Olgu</string>
-  <!-- Tab collection deletion prompt dialog message. %1$s is the collection name. -->
-  <string name="tab_collection_dialog_message">Kas oled kindel, et soovid kustutada kollektsiooni %1$s?</string>
   <!-- Sample text for accessibility font size -->
   <string name="accessibility_text_size_sample_text_1">See on näidistekst. Siin näidatakse, kuidas teksti kuvatakse, kui selle sättega suurust suurendada või vähendada.</string>
   <!-- Summary for Accessibility Text Size Scaling Preference -->
@@ -1640,10 +1610,6 @@
   <string name="browser_menu_remove_from_shortcuts">Eemalda otseteede hulgast</string>
   <!-- Message in delete confirmation dialog for password -->
   <string name="login_deletion_confirmation_2">Kas oled kindel, et soovid selle parooli kustutada?</string>
-  <!-- Positive action of a dialog asking to delete -->
-  <string name="dialog_delete_positive">Kustuta</string>
-  <!-- Negative action of a dialog asking to delete login -->
-  <string name="dialog_delete_negative">Loobu</string>
   <!-- The page title for editing a saved password. -->
   <string name="edit_2">Parooli muutmine</string>
   <!-- The page title for adding new password. -->

@@ -31,8 +31,6 @@
   <string name="tab_tray_close_multiselect_content_description">बहुछनौट मोडबाट बाहिर निस्कनुहोस्</string>
   <!-- About content. %1$s is the name of the app (for example "Firefox"). -->
   <string name="about_content" tools:ignore="BrandUsage">%1$s Mozilla द्वारा निर्माण गरिएको हो।</string>
-  <!-- Private Browsing -->
-  <string name="private_browsing_common_myths">निजी ब्राउजिङ्ग बारे सामान्य मिथकहरू</string>
   <!-- Text for the positive action button -->
   <string name="open_in_app_cfr_positive_button_text">सेटिङ्गहरुमा जानुहोस्</string>
   <!-- Text for the negative action button -->
@@ -66,11 +64,7 @@
     in the Recently visited section
   -->
   <string name="recently_visited_menu_item_remove">हटाउनुहोस्</string>
-  <!--
-    Browser Fragment
-
-    Content description (not visible, for screen readers etc.): Navigate backward (browsing history)
-  -->
+  <!-- Content description (not visible, for screen readers etc.): Navigate backward (browsing history) -->
   <string name="browser_menu_back">पछाडी</string>
   <!-- Content description (not visible, for screen readers etc.): Navigate forward (browsing history) -->
   <string name="browser_menu_forward">अगाडी</string>
@@ -128,10 +122,8 @@
   <!--
     Preferences
 
-    Title for the settings page
+    Preference category for general settings
   -->
-  <string name="settings">सेटिङ्गहरु</string>
-  <!-- Preference category for general settings -->
   <string name="preferences_category_general">सामान्य</string>
   <!-- Preference category for all links about Fenix -->
   <string name="preferences_category_about">बारेमा</string>
@@ -349,8 +341,6 @@
     Title of preference for tabs management
   -->
   <string name="preferences_tabs">ट्याबहरु</string>
-  <!-- Title of preference that allows a user to specify the tab view -->
-  <string name="preferences_tab_view">ट्याब दृश्य</string>
   <!-- Option for a list tab view -->
   <string name="tab_view_list">सूची</string>
   <!-- Option for a grid tab view -->

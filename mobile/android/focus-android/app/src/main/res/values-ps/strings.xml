@@ -91,7 +91,7 @@
     Focus is hard coded since we can't use variables in this context.
     Do not translate or transliterate Focus.
   -->
-  <string name="text_selection_search_action_focus" tools:ignore="BrandUsage">په Focus کې لټون</string>
+  <string name="text_selection_search_action_focus" tools:ignore="BrandUsage,UnusedResources">په Focus کې لټون</string>
   <!--
     This is the label of an action we offer when the user selects text in other third-party apps.
     Klar is hard coded since we can't use variables in this context.
@@ -274,8 +274,6 @@
   <string name="preference_exceptions_menu_remove">لیرې کول</string>
   <!-- Button to remove all websites from the exception list -->
   <string name="preference_exceptions_remove_all_button_label">ټولې وېبپاڼې لرې کول</string>
-  <!-- Title for Preference screen for cookie blocking for exceptions tracking protection -->
-  <string name="preference_block_cookies_title">کوکيز باندې بنديز لګول</string>
   <!-- Category of trackers (content) that can be blocked by Enhanced Tracking Protection. -->
   <string name="content">منځپانګه</string>
   <!-- Category of trackers (analytics) that can be blocked by Enhanced Tracking Protection. -->

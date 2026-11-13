@@ -12,6 +12,7 @@ import android.util.Log.INFO
 import androidx.annotation.OpenForTesting
 import androidx.annotation.VisibleForTesting
 import androidx.appcompat.app.AppCompatDelegate
+import androidx.core.os.UserManagerCompat
 import androidx.emoji2.text.DefaultEmojiCompatConfig
 import androidx.emoji2.text.EmojiCompat
 import androidx.lifecycle.ProcessLifecycleOwner
@@ -192,6 +193,8 @@ open class FocusApplication : Application(), Provider {
      * @param dispatcher The [CoroutineDispatcher] on which the initialization will occur. Defaults to [ioDispatcher].
      */
     private suspend fun initializeEmojiCompat(dispatcher: CoroutineDispatcher = ioDispatcher) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.VANILLA_ICE_CREAM) return
+
         withContext(dispatcher) {
             // If the device has no compatible provider (e.g. no Play Services), config will be null.
             val config = DefaultEmojiCompatConfig.create(applicationContext) ?: return@withContext
@@ -343,5 +346,13 @@ open class FocusApplication : Application(), Provider {
     }
 
     override val workManagerConfiguration
-        get() = Builder().setMinimumLoggingLevel(INFO).build()
+        get() =
+            Builder()
+                .setMinimumLoggingLevel(INFO)
+                .setInitializationExceptionHandler { throwable ->
+                    if (UserManagerCompat.isUserUnlocked(this)) {
+                        throw throwable
+                    }
+                }
+                .build()
 }

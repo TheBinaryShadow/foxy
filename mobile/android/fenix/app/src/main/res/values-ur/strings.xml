@@ -31,8 +31,6 @@
   <string name="tab_tray_close_multiselect_content_description">ملٹی سکرین موڈ سے نکلیں</string>
   <!-- About content. %1$s is the name of the app (for example "Firefox"). -->
   <string name="about_content" tools:ignore="BrandUsage">%1$s ءMozilla کے ذریعہ تیار کیا گیا ہے۔</string>
-  <!-- Private Browsing -->
-  <string name="private_browsing_common_myths">نجی براؤزنگ کے بارے میں عمومی فرضی داستان</string>
   <!-- Text for the positive action button -->
   <string name="open_in_app_cfr_positive_button_text">سیٹنگز پر جائیں</string>
   <!-- Text for the negative action button -->
@@ -82,11 +80,7 @@
     in the Recently visited section
   -->
   <string name="recently_visited_menu_item_remove">ہٹائیں</string>
-  <!--
-    Browser Fragment
-
-    Content description (not visible, for screen readers etc.): Navigate backward (browsing history)
-  -->
+  <!-- Content description (not visible, for screen readers etc.): Navigate backward (browsing history) -->
   <string name="browser_menu_back">واپس</string>
   <!-- Content description (not visible, for screen readers etc.): Navigate forward (browsing history) -->
   <string name="browser_menu_forward">آگے</string>
@@ -163,10 +157,8 @@
   <!--
     Preferences
 
-    Title for the settings page
+    Preference category for general settings
   -->
-  <string name="settings">سیٹنگز</string>
-  <!-- Preference category for general settings -->
   <string name="preferences_category_general">عمومی</string>
   <!-- Preference category for all links about Fenix -->
   <string name="preferences_category_about">کے بارے میں</string>
@@ -398,8 +390,6 @@
     Title of preference for tabs management
   -->
   <string name="preferences_tabs">ٹیبس</string>
-  <!-- Title of preference that allows a user to specify the tab view -->
-  <string name="preferences_tab_view">ٹیب ویو</string>
   <!-- Option for a list tab view -->
   <string name="tab_view_list">فہرست</string>
   <!-- Option for a grid tab view -->
@@ -435,12 +425,6 @@
   <!-- Summary for tabs preference when auto closing tabs setting is set to auto close tabs after one month -->
   <string name="close_tabs_after_one_month_summary">ایک ماہ کے بعد بند کریں</string>
   <!--
-    Inactive tabs
-
-    Category header of a preference that allows a user to enable or disable the inactive tabs feature
-  -->
-  <string name="preferences_inactive_tabs">پرانے ٹیبز کو غیر فعال میں منتقل کریں۔</string>
-  <!--
     Studies
 
     Title of the remove studies button
@@ -474,8 +458,6 @@
   <string name="close_tab_title">%s ٹیب بند کریں</string>
   <!-- Content description (not visible, for screen readers etc.): Opens the open tabs menu when pressed -->
   <string name="open_tabs_menu">ٹیبز کا مینو کھولیں</string>
-  <!-- Open tabs menu item to save tabs to collection -->
-  <string name="tabs_menu_save_to_collection1">ٹیبز کو مجموعہ میں محفوظ کریں</string>
   <!-- Text for the menu button to delete a collection -->
   <string name="collection_delete">مجموعہ حذف کریں</string>
   <!-- Text for the menu button to rename a collection -->
@@ -501,16 +483,6 @@
     %1$d is the number of bookmarks selected
   -->
   <string name="history_multi_select_title">%1$d منتخب کیا گیا</string>
-  <!-- Text for the header that groups the history for today -->
-  <string name="history_today">آج</string>
-  <!-- Text for the header that groups the history for yesterday -->
-  <string name="history_yesterday">کل</string>
-  <!-- Text for the header that groups the history the past 7 days -->
-  <string name="history_7_days">پچھلے 7 دن</string>
-  <!-- Text for the header that groups the history the past 30 days -->
-  <string name="history_30_days">پچھلے 30 دن</string>
-  <!-- Text for the header that groups the history older than the last month -->
-  <string name="history_older">‏‏زیادہ پرانا</string>
   <!-- Text shown when no history exists -->
   <string name="history_empty_message">یہاں کوئی سابقات نہیں ہے</string>
   <!--
@@ -740,8 +712,6 @@
   <string name="qr_scanner_dialog_invalid">ویب پتہ جائز نہیں ہے</string>
   <!-- QR code scanner prompt dialog positive option when there is an error -->
   <string name="qr_scanner_dialog_invalid_ok">ٹھیک ہے</string>
-  <!-- Tab collection deletion prompt dialog message. %1$s is the collection name. -->
-  <string name="tab_collection_dialog_message">کیا آپ واقعی %1$s کو حذف کرنا چاہتے ہیں؟</string>
   <!-- Summary for Accessibility Text Size Scaling Preference -->
   <string name="preference_accessibility_text_size_summary">ویبسائٹ پر موجود متن کو بڑا یا چھوٹا کریں</string>
   <!-- Title for Accessibility Text Size Scaling Preference -->
@@ -1044,8 +1014,6 @@
   <string name="confirm_clear_permission_site">کیا آپ واقعی اس سائٹ کے لئے اس اجازت کو ختم کرنا چاہتے ہیں؟</string>
   <!-- label shown when there are not site exceptions to show in the site exception settings -->
   <string name="no_site_exceptions">کوئی سائٹ استثنات نہیں ہے</string>
-  <!-- Positive action of a dialog asking to delete -->
-  <string name="dialog_delete_positive">حذف کریں</string>
   <!-- The error message in add login view when hostname field is blank. -->
   <string name="saved_login_hostname_required" tools:ignore="UnusedResources">میزبان نام درکار ہے۔</string>
   <!-- Voice search button content description -->

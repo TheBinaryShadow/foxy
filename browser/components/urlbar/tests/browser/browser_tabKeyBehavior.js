@@ -16,6 +16,7 @@ add_setup(async function () {
   await SpecialPowers.pushPrefEnv({
     set: [["browser.urlbar.tabToSearch.onboard.interactionsLeft", 0]],
   });
+  UrlbarTestUtils.registerZeroPrefixProvider();
 
   for (let i = 0; i < UrlbarPrefs.get("maxRichResults"); i++) {
     await PlacesTestUtils.addVisits("http://example.com/" + i);
@@ -228,6 +229,7 @@ add_task(async function tabNoSearchStringSearchMode() {
   info(
     "Tab through the toolbar when refocusing a Urlbar in search mode with the keyboard."
   );
+  await PlacesTestUtils.addVisits("https://example.com/");
   await UrlbarTestUtils.promiseAutocompleteResultPopup({
     window,
     value: "",
@@ -255,6 +257,7 @@ add_task(async function tabNoSearchStringSearchMode() {
 
   gURLBar.blur();
   await UrlbarTestUtils.promisePopupClose(window);
+  await PlacesUtils.history.clear();
 });
 
 add_task(async function tabOnTopSites() {

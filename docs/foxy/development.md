@@ -149,6 +149,17 @@ documentation. Promote validated work to `foxy_main` through review. The fixed
 releases are incorporated. Independent release automation and CI are planned;
 upstream infrastructure does not automatically provide Foxy CI.
 
+## Upstream integration record
+
+On 2026-11-14, `foxy_dev` integrated upstream `release` at Firefox **160.0.1**,
+revision `dc1259aee26fc94e00047ad4da433ceac1583eb4`, through a merge preserving
+the existing Foxy commit history. The Foxy documentation and workflow remain in
+place. The local build-monitor repair remains separate, uncommitted work.
+
+This records a source integration, not a successful native build or runtime
+validation of 160.0.1. The verified 157.0.1 native baseline remains historical
+evidence and the initial compatibility milestone.
+
 ## Local validation
 
 Use the checks appropriate to the changed component:

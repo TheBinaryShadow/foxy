@@ -51,8 +51,6 @@
   <string name="home_bookmarks_menu_item_remove">ہٹاؤ</string>
   <!-- About content. %1$s is the name of the app (for example "Firefox"). -->
   <string name="about_content" tools:ignore="BrandUsage">%1$s ایپ موزلے ولوں تیار کیتی اے۔</string>
-  <!-- Private Browsing -->
-  <string name="private_browsing_common_myths">نجی ورتوں بارے عام فرضی گلاں</string>
   <!--
     True Private Browsing Mode
 
@@ -139,11 +137,7 @@
   <string name="recently_visited_menu_item_remove">ہٹاؤ</string>
   <!-- Content description for the button which navigates the user to show all of their history. -->
   <string name="past_explorations_show_all_content_description_2">ساریاں پچھلیاں چھاݨ بیݨاں ویکھاؤ</string>
-  <!--
-    Browser Fragment
-
-    Content description (not visible, for screen readers etc.): Navigate backward (browsing history)
-  -->
+  <!-- Content description (not visible, for screen readers etc.): Navigate backward (browsing history) -->
   <string name="browser_menu_back">پچھے</string>
   <!-- Content description (not visible, for screen readers etc.): Navigate forward (browsing history) -->
   <string name="browser_menu_forward">اگے</string>
@@ -201,8 +195,6 @@
   <string name="browser_menu_sign_back_in_to_sync">ہم وقت کرن لئی واپس سائین ان کرو</string>
   <!-- Browser menu caption label for the "Sign back in to sync" browser menu item described in `browser_menu_sign_back_in_to_sync` when there is an error in syncing -->
   <string name="browser_menu_syncing_paused_caption">ہم وقت نوں روکیا گیا اے</string>
-  <!-- Browser menu label that creates a private tab -->
-  <string name="browser_menu_new_private_tab">نجی ٹیب کھولھو</string>
   <!-- Browser menu label that navigates to the Password screen -->
   <string name="browser_menu_passwords">پاس‌ورڈ</string>
   <!-- Browser menu label that navigates to the edit bookmark screen for the current bookmarked page -->
@@ -277,10 +269,8 @@
   <!--
     Preferences
 
-    Title for the settings page
+    Preference category for general settings
   -->
-  <string name="settings">سیٹنگاں</string>
-  <!-- Preference category for general settings -->
   <string name="preferences_category_general">عام</string>
   <!-- Preference category for all links about Fenix -->
   <string name="preferences_category_about">بارے</string>
@@ -718,8 +708,6 @@
     Title of preference for tabs management
   -->
   <string name="preferences_tabs">ٹیباں</string>
-  <!-- Title of preference that allows a user to specify the tab view -->
-  <string name="preferences_tab_view">ٹیب دا نظارہ</string>
   <!-- Option for a list tab view -->
   <string name="tab_view_list">فہرست</string>
   <!-- Option for a grid tab view -->
@@ -762,13 +750,7 @@
   <string name="opening_screen_last_tab_summary">پچھلی ٹیب اُتے کھولھو</string>
   <!-- Summary for homepage preference indicating opening the homepage when re-opening the app after four hours of inactivity -->
   <string name="opening_screen_after_four_hours_of_inactivity_summary">چار گھنٹیاں بعدے مکھ صفحے اُتے کھولھو</string>
-  <!--
-    Inactive tabs
-
-    Category header of a preference that allows a user to enable or disable the inactive tabs feature
-  -->
-  <string name="preferences_inactive_tabs">پراݨیاں ٹیباں نوں غیرفعال چ بھیجو</string>
-  <!-- Title of inactive tabs preference -->
+  <!-- Summary of the preference that allows a user to enable or disable the inactive tabs feature. -->
   <string name="preferences_inactive_tabs_title">پچھلے دو ہفتیاں وچ تہاڈے ولوں نہ ویکھیاں ٹیباں نوں غیرفعال بھاگ وچ بھیجیا جاندا اے۔</string>
   <!--
     Studies
@@ -804,8 +786,6 @@
   <string name="close_tab_title">%s ٹیب بند کرو</string>
   <!-- Content description (not visible, for screen readers etc.): Opens the open tabs menu when pressed -->
   <string name="open_tabs_menu">ٹیب مینو کھلھو</string>
-  <!-- Open tabs menu item to save tabs to collection -->
-  <string name="tabs_menu_save_to_collection1">ٹیباں نوں بھنڈار چ سنبھالو</string>
   <!-- Text for the menu button to delete a collection -->
   <string name="collection_delete">بھنڈار ہٹاؤ</string>
   <!-- Text for the menu button to rename a collection -->
@@ -837,16 +817,6 @@
     %1$d is the number of bookmarks selected
   -->
   <string name="history_multi_select_title">%1$d چݨیاں</string>
-  <!-- Text for the header that groups the history for today -->
-  <string name="history_today">اج</string>
-  <!-- Text for the header that groups the history for yesterday -->
-  <string name="history_yesterday">کل</string>
-  <!-- Text for the header that groups the history the past 7 days -->
-  <string name="history_7_days">پچھلے ۷ دن</string>
-  <!-- Text for the header that groups the history the past 30 days -->
-  <string name="history_30_days">پچھلے ۳۰ دن</string>
-  <!-- Text for the header that groups the history older than the last month -->
-  <string name="history_older">پراݨے</string>
   <!-- Text shown when no history exists -->
   <string name="history_empty_message">اتھے کوئی تاریخ نہیں اے</string>
   <!--
@@ -1322,10 +1292,6 @@
   <string name="search_engine_edit">سودھو</string>
   <!-- Text for the menu button to delete a search engine -->
   <string name="search_engine_delete">مٹاؤ</string>
-  <!-- Positive action of a dialog asking to delete -->
-  <string name="dialog_delete_positive">مٹاؤ</string>
-  <!-- Negative action of a dialog asking to delete login -->
-  <string name="dialog_delete_negative">رد کرو</string>
   <!-- Title text displayed in the rename top site dialog. -->
   <string name="top_sites_rename_dialog_title">ناں</string>
   <!-- Dialog button text for canceling the rename top site prompt. -->

@@ -85,7 +85,7 @@
     Focus is hard coded since we can't use variables in this context.
     Do not translate or transliterate Focus.
   -->
-  <string name="text_selection_search_action_focus" tools:ignore="BrandUsage">Focusiorhu jirinhantsi</string>
+  <string name="text_selection_search_action_focus" tools:ignore="BrandUsage,UnusedResources">Focusiorhu jirinhantsi</string>
   <!--
     This is the label of an action we offer when the user selects text in other third-party apps.
     Klar is hard coded since we can't use variables in this context.
@@ -335,14 +335,6 @@
   <string name="onboarding_second_screen_default_browser_button_text">Ini jirinhatarantskuani pekurintani</string>
   <!-- New Onboarding flow second screen skip onboarding button label -->
   <string name="onboarding_second_screen_skip_button_text">Wanajchakuni</string>
-  <!-- First run tour (Default browser): Title -->
-  <string name="firstrun_defaultbrowser_title">Jískakwa ampe winhaskuntsï</string>
-  <!-- First run tour (Search): Title -->
-  <string name="firstrun_search_title">Ch\'éeti jirinhanstkwa, ch\'éeti jánkwa</string>
-  <!-- First run tour (Shortcut): Title -->
-  <string name="firstrun_shortcut_title">Wenakwarhu jurhikutakwaechani kuparhataa</string>
-  <!-- First run tour (Privacy): Title -->
-  <string name="firstrun_privacy_title">Méntku ísï jirikurhiparini</string>
   <!-- Label of the action that will add the current website to the home screen (shown in the confirmation dialog). -->
   <string name="dialog_addtohomescreen_action_add">Kúparhatani</string>
   <!-- Label of the action that will close the dialog and not add anything to the home screen (shown in the confirmation dialog). -->

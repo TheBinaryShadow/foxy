@@ -20,6 +20,7 @@ add_task(async function test_with_oneoff_button() {
   await SpecialPowers.pushPrefEnv({
     set: [["browser.urlbar.scotchBonnet.enableOverride", false]],
   });
+  UrlbarTestUtils.registerZeroPrefixProvider();
   info("Loading test page into first tab");
   let promiseLoad = BrowserTestUtils.browserLoaded(
     gBrowser.selectedBrowser,

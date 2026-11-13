@@ -75,9 +75,11 @@
   <string name="home_bookmarks_menu_item_remove">چىقىرىۋەت</string>
   <!-- About content. %1$s is the name of the app (for example "Firefox"). -->
   <string name="about_content" tools:ignore="BrandUsage">%1$s نى Mozilla ياسىغان.</string>
-  <!-- Private Browsing -->
-  <string name="private_browsing_common_myths">شەخسىيەت زىيارىتى ھەققىدە كۆپ ئۇچرايدىغان قاراشلار</string>
-  <!-- Text to be announced by the accessibility service to inform the user that the private browsing mode is currently active. -->
+  <!--
+    Private Browsing
+
+    Text to be announced by the accessibility service to inform the user that the private browsing mode is currently active.
+  -->
   <string name="private_browsing_a11y_session_announcement">شەخسىي زىيارەت سۆزلەشكۈ</string>
   <!--
     True Private Browsing Mode
@@ -178,11 +180,7 @@
   <string name="recently_visited_menu_item_remove">چىقىرىۋەت</string>
   <!-- Content description for the button which navigates the user to show all of their history. -->
   <string name="past_explorations_show_all_content_description_2">ئىلگىرىكى ئىزدىنىشلەرنىڭ ھەممىسىنى كۆرسەت</string>
-  <!--
-    Browser Fragment
-
-    Content description (not visible, for screen readers etc.): Navigate backward (browsing history)
-  -->
+  <!-- Content description (not visible, for screen readers etc.): Navigate backward (browsing history) -->
   <string name="browser_menu_back">قايتىش</string>
   <!-- Content description (not visible, for screen readers etc.): Navigate forward (browsing history) -->
   <string name="browser_menu_forward">ئالدىغا</string>
@@ -263,8 +261,6 @@
   <string name="browser_menu_syncing_paused_caption">قەدەمداشلاش ۋاقىتلىق توختىدى</string>
   <!-- Browser menu caption label for an authenticated user -->
   <string name="browser_menu_signed_in_caption">زاپاسلاپ ۋە قەدەمداشلايدىغاننى باشقۇرىدۇ</string>
-  <!-- Browser menu label that creates a private tab -->
-  <string name="browser_menu_new_private_tab">يېڭى شەخسىي بەتكۈچ</string>
   <!-- Browser menu label that navigates to the Password screen -->
   <string name="browser_menu_passwords">ئىم</string>
   <!-- Content description (not visible, for screen readers etc.) for the handle used to drag the main menu at the bottom of the screen. -->
@@ -305,8 +301,6 @@
   <string name="browser_menu_default_banner_title">%1$s نى كۆڭۈلدىكى توركۆرگۈگە تەڭشەيدۇ</string>
   <!-- Label text within the set as default banner -->
   <string name="browser_menu_default_banner_subtitle_2">تېز، شەخسىي ۋە سىز ئۈچۈن ياسالغان.</string>
-  <!-- Content description (not visible, for screen readers etc.) for the button that dismisses the set as default banner in the menu -->
-  <string name="browser_menu_default_banner_dismiss_promotion">تەشۋىقاتقا پەرۋا قىلما</string>
   <!-- Content description (not visible, for screen readers etc.) for recommended extensions in main menu -->
   <string name="browser_menu_recommended_extensions_content_description">تەپسىلاتى</string>
   <!--
@@ -466,18 +460,6 @@
   <string name="onboarding_preferences_dialog_positive_button">تامام</string>
   <!-- Terms of service onboarding title card label. 'Firefox' intentionally hardcoded here -->
   <string name="onboarding_welcome_to_firefox" tools:ignore="BrandUsage">Firefox قا خۇش كەپسىز</string>
-  <!-- Line one of the terms of service onboarding page. %1$s is replaced by an active link, using onboarding_term_of_service_line_one_link_text_2 as text (“Firefox Terms of Use”). -->
-  <string name="onboarding_term_of_service_line_one_2">داۋاملاشتۇرسىڭىز، %1$s غا قوشۇلىسىز.</string>
-  <!-- Used as text for the link in onboarding_term_of_service_line_one_2. -->
-  <string name="onboarding_term_of_service_line_one_link_text_2" tools:ignore="BrandUsage">Firefox ئىشلىتىش ماددىلىرى</string>
-  <!-- Line two of the terms of service onboarding page. 'Firefox' is intentionally hardcoded. %1$s is replaced by an active link, using onboarding_term_of_service_line_two_link_text as text (“Privacy Notice”). -->
-  <string name="onboarding_term_of_service_line_two_2" tools:ignore="BrandUsage">Firefox شەخسىيىتىڭىزگە كۆڭۈل بۆلىدۇ. %1$s دىن تەپسىلاتىنى بىلىڭ.</string>
-  <!-- Used as text for the link in onboarding_term_of_service_line_two. -->
-  <string name="onboarding_term_of_service_line_two_link_text">شەخسىيەت ئۇقتۇرۇشى</string>
-  <!-- Line three of the terms of service onboarding page. 'Firefox' and 'Mozilla' are intentionally hardcoded. %1$s is replaced by an active link using onboarding_term_of_service_line_three_link_text as text (“Manage”). -->
-  <string name="onboarding_term_of_service_line_three" tools:ignore="BrandUsage">توركۆرگۈنى ياخشىلاشقا ياردەملىشىپ، Firefox دىياگنوز ۋە تەسىرلىشىش سانلىق مەلۇماتىنى Mozilla غا يوللايدۇ. %1$s</string>
-  <!-- Used as text for the link in onboarding_term_of_service_line_three. -->
-  <string name="onboarding_term_of_service_line_three_link_text">باشقۇرۇش</string>
   <!-- Terms of use (ToU) onboarding redesign title. -->
   <string name="onboarding_redesign_tou_title" tools:ignore="UnusedResources">ئەڭ ئاخىرقى Android توركۆرگۈنى قوزغىتىدۇ</string>
   <!-- Terms of use (ToU) first subheader. -->
@@ -580,20 +562,6 @@
   <string name="nova_onboarding_set_to_default_subtitle">سانلىق مەلۇماتىڭىزنى قوغدايمىز ۋە شىركەتلەرنىڭ چېكىشلىرىڭىزنى نازارەت قىلىشىنى ئۆزلۈكىدىن توسىمىز.</string>
   <!-- "Set to default" onboarding button. -->
   <string name="nova_onboarding_set_to_default_button">كۆڭۈلدىكى توركۆرگۈ قىلىپ تەڭشە</string>
-  <!-- Toolbar selection onboarding title. -->
-  <string name="nova_onboarding_toolbar_selection_title">ئادرېس بالداق ئورنى تاللىنىدۇ</string>
-  <!-- Toolbar selection onboarding "top" option label. -->
-  <string name="nova_onboarding_toolbar_selection_top_label">چوققا</string>
-  <!-- Toolbar selection onboarding "bottom" option label. -->
-  <string name="nova_onboarding_toolbar_selection_bottom_label">ئاستى</string>
-  <!-- Theme selection onboarding title. -->
-  <string name="nova_onboarding_theme_selection_title" tools:ignore="UnusedResources">ئۆرنەك تاللىنىدۇ</string>
-  <!-- Theme selection onboarding "automatic" option label. -->
-  <string name="nova_onboarding_theme_selection_automatic_label" tools:ignore="UnusedResources">ئاپتوماتىك</string>
-  <!-- Theme selection onboarding "light" option label. -->
-  <string name="nova_onboarding_theme_selection_light_label" tools:ignore="UnusedResources">يورۇق</string>
-  <!-- Theme selection onboarding "dark" option label. -->
-  <string name="nova_onboarding_theme_selection_dark_label" tools:ignore="UnusedResources">قاراڭغۇ</string>
   <!-- Sync onboarding title. -->
   <string name="nova_onboarding_sync_title">شۇئان ئالدىنقى قېتىم كەلگەن جايدىن داۋاملاشتۇرىدۇ</string>
   <!-- Sync onboarding subtitle. -->
@@ -658,12 +626,6 @@
   <string name="nova_onboarding_notifications_subtitle" tools:ignore="BrandUsage,UnusedResources">Firefox نىڭ ئەڭ يېڭى شەخسىيەت ئىقتىدارىنى بايقاپ، شەخسىيەت قوغداشنىڭ ئەڭ يېڭى ئېقىمىغا ئەگىشەلەيسىز.</string>
   <!-- Notifications onboarding button. -->
   <string name="nova_onboarding_notifications_button">ئۇقتۇرۇشنى ئاچ</string>
-  <!-- "Add search widget" onboarding title. -->
-  <string name="nova_onboarding_add_search_widget_title">ھەر بىر ئىزدەشنى تېخىمۇ شەخسىي قىلىدۇ</string>
-  <!-- "Add search widget" onboarding subtitle. 'Firefox' is intentionally hardcoded. -->
-  <string name="nova_onboarding_add_search_widget_subtitle" tools:ignore="BrandUsage">تېلېفوننىڭ باش ئېكرانىدىنلا ئىزدىيەلەيسىز، Firefox نىڭ ئۆزلۈكىدىن قوغداش ئىقتىدارى ھەر ۋاقىت سىزگە ماياك بولىدۇ.</string>
-  <!-- "Add search widget" onboarding button. 'Firefox' is intentionally hardcoded. -->
-  <string name="nova_onboarding_add_search_widget_button" tools:ignore="BrandUsage">Firefox ئەپچە قوش</string>
   <!-- Customize prompt onboarding title. -->
   <string name="nova_onboarding_customize_prompt_title" tools:ignore="UnusedResources">خاسلاشتۇرۇش ئاسان، ھەر بىر چېكىشنىڭ شەخسىيىتى تېخىمۇ قوغدىلىدۇ</string>
   <plurals name="nova_onboarding_customize_prompt_body" tools:ignore="UnusedResources">
@@ -704,10 +666,8 @@
   <!--
     Preferences
 
-    Title for the settings page
+    Preference category for general settings
   -->
-  <string name="settings">تەڭشەك</string>
-  <!-- Preference category for general settings -->
   <string name="preferences_category_general">ئادەتتىكى</string>
   <!-- Preference category for all links about Fenix -->
   <string name="preferences_category_about">ھەققىدە</string>
@@ -1264,8 +1224,6 @@
   <string name="preference_simple_toolbar">ئاددىي</string>
   <!-- Preference for using expanded toolbar -->
   <string name="preference_expanded_toolbar">يېيىلدى</string>
-  <!-- Preference description indicating the toolbar location preference is disabled when the tab strip is enabled -->
-  <string name="preference_toolbar_pref_disabled_explanation">بەتكۈچ بالداق كۆرسىتىلگەندە ئادرېس بالداق چوقۇم چوققىدا بولۇشى كېرەك.</string>
   <!-- New tab shortcut in toolbar customization -->
   <string name="toolbar_customize_shortcut_new_tab">يېڭى بەتكۈچ ئاچ</string>
   <!-- Share shortcut in toolbar customization -->
@@ -1391,8 +1349,6 @@
     Title of preference for tabs management
   -->
   <string name="preferences_tabs">بەتكۈچ</string>
-  <!-- Title of preference that allows a user to specify the tab view -->
-  <string name="preferences_tab_view">بەتكۈچ كۆرۈنۈش</string>
   <!-- Option for a list tab view -->
   <string name="tab_view_list">تىزىم</string>
   <!-- Option for a grid tab view -->
@@ -1437,16 +1393,8 @@
   <string name="opening_screen_last_tab_summary">ئاخىرقى بەتكۈچتە ئاچ</string>
   <!-- Summary for homepage preference indicating opening the homepage when re-opening the app after four hours of inactivity -->
   <string name="opening_screen_after_four_hours_of_inactivity_summary">تۆت سائەتتىن كېيىن باش بەتتە ئاچ</string>
-  <!--
-    Inactive tabs
-
-    Category header of a preference that allows a user to enable or disable the inactive tabs feature
-  -->
-  <string name="preferences_inactive_tabs">كونا بەتكۈچنى ئاكتىپسىز ھالەتكە يۆتكەيدۇ</string>
-  <!-- Title of inactive tabs preference -->
+  <!-- Summary of the preference that allows a user to enable or disable the inactive tabs feature. -->
   <string name="preferences_inactive_tabs_title">سىز ئىككى ھەپتە كۆرمىگەن بەتكۈچلەر ئاكتىپسىز بۆلەككە يۆتكىلىدۇ.</string>
-  <!-- Title for the preference to enable or disable the tab groups feature -->
-  <string name="preferences_tab_groups_feature">بەتكۈچ گۇرۇپپىسىنى قوزغات</string>
   <!--
     Privacy report
 
@@ -1562,8 +1510,6 @@
   <string name="open_tabs_menu">بەتكۈچ تىزىملىكىنى ئاچ</string>
   <!-- Content description (not visible, for screen readers etc.): Return to tab manager -->
   <string name="tab_manager_search_bar_back_content_description">بەتكۈچ باشقۇرغۇچقا قايتىدۇ</string>
-  <!-- Open tabs menu item to save tabs to collection -->
-  <string name="tabs_menu_save_to_collection1">بەتكۈچلەرنى يىغقۇچقا ساقلا</string>
   <!-- Text for the menu button to delete a collection -->
   <string name="collection_delete">يىغقۇچنى ئۆچۈر</string>
   <!-- Text for the menu button to rename a collection -->
@@ -1729,16 +1675,6 @@
     %1$d is the number of bookmarks selected
   -->
   <string name="history_multi_select_title">%1$d تاللاندى</string>
-  <!-- Text for the header that groups the history for today -->
-  <string name="history_today">بۈگۈن</string>
-  <!-- Text for the header that groups the history for yesterday -->
-  <string name="history_yesterday">تۈنۈگۈن</string>
-  <!-- Text for the header that groups the history the past 7 days -->
-  <string name="history_7_days">ئاخىرقى 7 كۈن</string>
-  <!-- Text for the header that groups the history the past 30 days -->
-  <string name="history_30_days">ئاخىرقى 30 كۈن</string>
-  <!-- Text for the header that groups the history older than the last month -->
-  <string name="history_older">تېخىمۇ بۇرۇن</string>
   <!-- Text shown when no history exists -->
   <string name="history_empty_message">ھېچقانداق تارىخ خاتىرىسى يوق</string>
   <!--
@@ -1965,8 +1901,6 @@
   <string name="webcompat_reporter_label_mandatory_description">مەسىلىنى تەكشۈرۈشىمىزگە ياردەم بېرىش ئۈچۈن مەسىلىنى تەپسىلىي چۈشەندۈرۈڭ</string>
   <!-- The label/title of a optional field in the Web Compat Reporter feature for adding additional information. -->
   <string name="webcompat_reporter_label_optional_description">مەسىلىنى تەكشۈرۈشىمىزگە ياردەم بېرىش ئۈچۈن مەسىلىنى تەپسىلىي چۈشەندۈرۈڭ (تاللاشچان)</string>
-  <!-- The button text for the cancel button to leave the Web Compat Reporter feature. -->
-  <string name="webcompat_reporter_cancel">ۋاز كەچ</string>
   <!-- The button text for the send button to submit the provided form data. -->
   <string name="webcompat_reporter_send_report">دوكلات يوللا</string>
   <!-- Text for a snackbar to confirm the successful submission of a WebCompat report. -->
@@ -2367,10 +2301,6 @@
   <string name="sync_sign_in">قەدەمداشلاشتا تىزىمغا كىرىڭ</string>
   <!-- An option from the share dialog to send link to all other sync devices -->
   <string name="sync_send_to_all">ھەممە ئۈسكۈنىگە يوللا</string>
-  <!-- Text displayed when no other sync devices are available for link sharing -->
-  <string name="sync_no_devices_available">ھېچقانداق ئۈسكۈنە يوق</string>
-  <!-- Text displayed when no other sync devices are available for link sharing. -->
-  <string name="sync_no_devices_available_description">بۇ ھېسابتا ھەر قانداق ئۈسكۈنە تىزىمغا كىرسە ۋە قەدەمداشلىسا بۇ جايدا كۆرۈنىدۇ.</string>
   <!-- An option from the share dialog to reconnect to sync -->
   <string name="sync_reconnect">قەدەمداشقا قايتا باغلىنىدۇ</string>
   <!-- Text displayed when sync is offline and cannot be accessed -->
@@ -2484,8 +2414,6 @@
   <string name="qr_scanner_dialog_invalid">تور ئادرېس ئىناۋەتسىز.</string>
   <!-- QR code scanner prompt dialog positive option when there is an error -->
   <string name="qr_scanner_dialog_invalid_ok">جەزملە</string>
-  <!-- Tab collection deletion prompt dialog message. %1$s is the collection name. -->
-  <string name="tab_collection_dialog_message">بۇ %1$s نى راستىنلا ئۆچۈرەمسىز؟</string>
   <!-- Sample text for accessibility font size -->
   <string name="accessibility_text_size_sample_text_1">بۇ ئۈلگە تېكىست. بۇ تەڭشەك بىلەن تېكىستنى چوڭايتقاندا ياكى كىچىكلەتكەندە تېكىستنىڭ قانداق كۆرۈلىدىغانلىقىنى كۆرسىتىپ بېرىدۇ.</string>
   <!-- Summary for Accessibility Text Size Scaling Preference -->
@@ -3011,8 +2939,6 @@
   <string name="preferences_ip_protection_beta_badge_label">سىناق نەشرى</string>
   <!-- Title for the browser VPN settings screen (displayed in the app bar) -->
   <string name="ip_protection_settings_title">ئىچىدىكى VPN</string>
-  <!-- Title for the browser VPN settings screen (displayed in the app bar) -->
-  <string name="ip_protection_title">VPN</string>
   <!-- Label for the browser VPN toggle on the settings screen -->
   <string name="ip_protection_toggle_label">VPN</string>
   <!-- Content description for the browser VPN settings screen top bar back button -->
@@ -3107,8 +3033,6 @@
   <string name="ip_protection_data_limit_reached_snackbar">مەۋھۇم شەخسىي تور ئېقىم سانلىق مەلۇماتىدىن %1$d GB ئىشلەتتى. زىيارەت ئىجازىتىڭىز كېيىنكى ئايدا ئەسلىگە قايتۇرۇلىدۇ.</string>
   <!-- Snackbar (in-app pop-up notification) action button text that takes the user to the VPN settings screen. -->
   <string name="ip_protection_open_settings_snackbar_action">تەڭشەك</string>
-  <!-- Snackbar (in-app pop-up notification) action button text that takes the user to the VPN settings screen. -->
-  <string name="ip_protection_data_limit_reached_snackbar_action">تەڭشەك</string>
   <!-- Description shown on the browser VPN settings screen prompting the user to turn the VPN on. -->
   <string name="ip_protection_settings_description" tools:ignore="UnusedResources">ئىزلاشنى قىيىنلاشتۇرۇپ ۋە تور زىيارىتىنى تېخىمۇ مەخپىي قىلىش ئۈچۈن VPN نى ئېچىڭ.</string>
   <!-- Title shown on the browser VPN settings screen for location selection section. -->
@@ -3361,10 +3285,6 @@
   <string name="browser_menu_remove_from_shortcuts">تېزلەتمىدىن چىقىرىۋەت</string>
   <!-- Message in delete confirmation dialog for password -->
   <string name="login_deletion_confirmation_2">بۇ ئىمنى راستىنلا ئۆچۈرەمسىز؟</string>
-  <!-- Positive action of a dialog asking to delete -->
-  <string name="dialog_delete_positive">ئۆچۈر</string>
-  <!-- Negative action of a dialog asking to delete login -->
-  <string name="dialog_delete_negative">ۋاز كەچ</string>
   <!-- The page title for editing a saved password. -->
   <string name="edit_2">ئىم تەھرىر</string>
   <!-- The page title for adding new password. -->
@@ -3850,11 +3770,6 @@
   <string name="protection_panel_etp_toggle_enabled_description_2">ئەگەر بۇ تور بېكەتتە بىرەر نەرسە بۇزۇلغاندەك كۆرۈنسە، ئۇنى تاقاپ سىناپ بېقىڭ.</string>
   <!-- Description text for the Enhanced Tracking Protection toggle when tracking protection is disabled. -->
   <string name="protection_panel_etp_toggle_disabled_description_2">ئىزلاشتىن قوغداشنى ئېچىش تەۋسىيە قىلىنىدۇ.</string>
-  <!--
-    Text for displaying the total number of trackers blocked in the protection panel.
-    %d is a placeholder for the number of trackers blocked.
-  -->
-  <string name="protection_panel_num_trackers_blocked">ئىزلىغۇچى توسۇلدى: %d</string>
   <!-- Text for when tracking protection is disabled and no trackers are blocked. -->
   <string name="protection_panel_etp_disabled_no_trackers_blocked">ئىزلىغۇچ توسۇلمىدى</string>
   <!-- Link text to navigate to privacy and security settings from the protection panel. -->
@@ -4536,12 +4451,6 @@
   <string name="firefox_labs_website_isolation_title" tools:ignore="UnusedResources">تور بېكەت ئايرىش</string>
   <!-- Description of the Firefox Labs Sandboxing experiment. -->
   <string name="firefox_labs_website_isolation_description" tools:ignore="UnusedResources">ئوخشاش بولمىغان بېكەت ئارىسىدا يەنە بىر قوشۇمچە توسۇق قوشۇپ بەتكۈچ ھالقىغان سانلىق مەلۇماتنى قوغداشقا ياردەم بېرىدۇ. بەلكىم ئۈنۈم، مۇقىملىق، تور بېكەت ماسلىشىشچانلىقى ۋە تور زىيارەت تارىخىنىڭ قانداق ساقلىنىشىغا تەسىر كۆرسىتىشى مۇمكىن.</string>
-  <!--
-    PDF viewer toolbar and buttons
-
-    Content description for accessibility (used by screen readers): Description for the button that triggers the start of a signature workflow on the PDF displayed on the screen.
-  -->
-  <string name="pdf_tools_sign_content_description">PDF كە ئىمزا قوي</string>
   <!-- Content description for accessibility (used by screen readers): Description of the button that downloads the PDF displayed on the screen to the user's device. -->
   <string name="pdf_tools_download_content_description">PDF چۈشۈر</string>
   <!-- Content description for accessibility (used by screen readers): Description for the button that opens the printing dialogue window for the PDF displayed on the screen. -->

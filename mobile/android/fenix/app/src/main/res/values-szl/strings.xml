@@ -41,8 +41,6 @@
   <string name="tab_tray_close_multiselect_content_description">Wylyź ze trybu multiwyboru</string>
   <!-- About content. %1$s is the name of the app (for example "Firefox"). -->
   <string name="about_content" tools:ignore="BrandUsage">%1$s produkuje Mozilla.</string>
-  <!-- Private Browsing -->
-  <string name="private_browsing_common_myths">Czynste mity ô prywatnym przeglōndaniu</string>
   <!--
     Open in App "contextual feature recommendation" (CFR)
 
@@ -117,11 +115,7 @@
   <string name="recently_visited_menu_item_remove">Skasuj</string>
   <!-- Content description for the button which navigates the user to show all of their history. -->
   <string name="past_explorations_show_all_content_description_2">Pokorz wszyske downiyjsze poszukowania</string>
-  <!--
-    Browser Fragment
-
-    Content description (not visible, for screen readers etc.): Navigate backward (browsing history)
-  -->
+  <!-- Content description (not visible, for screen readers etc.): Navigate backward (browsing history) -->
   <string name="browser_menu_back">Nazod</string>
   <!-- Content description (not visible, for screen readers etc.): Navigate forward (browsing history) -->
   <string name="browser_menu_forward">Do przodku</string>
@@ -220,10 +214,8 @@
   <!--
     Preferences
 
-    Title for the settings page
+    Preference category for general settings
   -->
-  <string name="settings">Sztalōnki</string>
-  <!-- Preference category for general settings -->
   <string name="preferences_category_general">Ôgōlne</string>
   <!-- Preference category for all links about Fenix -->
   <string name="preferences_category_about">Ô aplikacyji</string>
@@ -561,8 +553,6 @@
     Title of preference for tabs management
   -->
   <string name="preferences_tabs">Karty</string>
-  <!-- Title of preference that allows a user to specify the tab view -->
-  <string name="preferences_tab_view">Wyglōnd kart</string>
   <!-- Option for a list tab view -->
   <string name="tab_view_list">Wykoz</string>
   <!-- Option for a grid tab view -->
@@ -605,13 +595,7 @@
   <string name="opening_screen_last_tab_summary">Ôdewrzij na ôstatnij karcie</string>
   <!-- Summary for homepage preference indicating opening the homepage when re-opening the app after four hours of inactivity -->
   <string name="opening_screen_after_four_hours_of_inactivity_summary">Ôdewrzij na dōmowyj strōnie po sztyrech godzinach</string>
-  <!--
-    Inactive tabs
-
-    Category header of a preference that allows a user to enable or disable the inactive tabs feature
-  -->
-  <string name="preferences_inactive_tabs">Dej stare karty do niyaktywnych</string>
-  <!-- Title of inactive tabs preference -->
+  <!-- Summary of the preference that allows a user to enable or disable the inactive tabs feature. -->
   <string name="preferences_inactive_tabs_title">Larty, co dwa tydnie niy były ôtwiyrane, idōm do sekcyje niyaktywnych kart.</string>
   <!--
     Studies
@@ -647,8 +631,6 @@
   <string name="close_tab_title">Zawrzij karta %s</string>
   <!-- Content description (not visible, for screen readers etc.): Opens the open tabs menu when pressed -->
   <string name="open_tabs_menu">Myni ôtwartych kart</string>
-  <!-- Open tabs menu item to save tabs to collection -->
-  <string name="tabs_menu_save_to_collection1">Spamiyntej karty do kolekcyje</string>
   <!-- Text for the menu button to delete a collection -->
   <string name="collection_delete">Skasuj kolekcyjo</string>
   <!-- Text for the menu button to rename a collection -->
@@ -680,16 +662,6 @@
     %1$d is the number of bookmarks selected
   -->
   <string name="history_multi_select_title">Ôbrane: %1$d</string>
-  <!-- Text for the header that groups the history for today -->
-  <string name="history_today">Dzisio</string>
-  <!-- Text for the header that groups the history for yesterday -->
-  <string name="history_yesterday">Wczora</string>
-  <!-- Text for the header that groups the history the past 7 days -->
-  <string name="history_7_days">Ôstatnie 7 dni</string>
-  <!-- Text for the header that groups the history the past 30 days -->
-  <string name="history_30_days">Ôstatnie 30 dni</string>
-  <!-- Text for the header that groups the history older than the last month -->
-  <string name="history_older">Starsze</string>
   <!-- Text shown when no history exists -->
   <string name="history_empty_message">Niy ma sam żodnyj historyje</string>
   <!--
@@ -967,8 +939,6 @@
   <string name="qr_scanner_dialog_invalid">Adresa strōny je felerno.</string>
   <!-- QR code scanner prompt dialog positive option when there is an error -->
   <string name="qr_scanner_dialog_invalid_ok">OK</string>
-  <!-- Tab collection deletion prompt dialog message. %1$s is the collection name. -->
-  <string name="tab_collection_dialog_message">Na zicher chcesz skasować %1$s?</string>
   <!-- Sample text for accessibility font size -->
   <string name="accessibility_text_size_sample_text_1">To je przikładowy tekst. Je sam na to, coby pokozać, jak bydzie wyglōndoł, jak go zwiynkszysz abo zmyńszysz z tym sztalōnkym.</string>
   <!-- Summary for Accessibility Text Size Scaling Preference -->

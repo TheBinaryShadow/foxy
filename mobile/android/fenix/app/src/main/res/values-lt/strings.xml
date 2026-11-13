@@ -53,8 +53,6 @@
   <string name="home_bookmarks_menu_item_remove">Pašalinti</string>
   <!-- About content. %1$s is the name of the app (for example "Firefox"). -->
   <string name="about_content" tools:ignore="BrandUsage">„%1$s“ kūrėjai yra „Mozilla“.</string>
-  <!-- Private Browsing -->
-  <string name="private_browsing_common_myths">Dažni mitai apie privatųjį naršymą</string>
   <!--
     Description of private browsing mode displayed to users on the homepage when they enable private mode.
     %1$s is the name of the app (for example "Firefox").
@@ -140,11 +138,7 @@
   <string name="recently_visited_menu_item_remove">Pašalinti</string>
   <!-- Content description for the button which navigates the user to show all of their history. -->
   <string name="past_explorations_show_all_content_description_2">Rodyti visus ankstesnius tyrinėjimus</string>
-  <!--
-    Browser Fragment
-
-    Content description (not visible, for screen readers etc.): Navigate backward (browsing history)
-  -->
+  <!-- Content description (not visible, for screen readers etc.): Navigate backward (browsing history) -->
   <string name="browser_menu_back">Atgal</string>
   <!-- Content description (not visible, for screen readers etc.): Navigate forward (browsing history) -->
   <string name="browser_menu_forward">Pirmyn</string>
@@ -213,8 +207,6 @@
   <string name="browser_menu_syncing_paused_caption">Sinchronizavimas pristabdytas</string>
   <!-- Browser menu caption label for an authenticated user -->
   <string name="browser_menu_signed_in_caption">Valdykite savo atsargines kopijas bei tai, ką sinchronizuojate</string>
-  <!-- Browser menu label that creates a private tab -->
-  <string name="browser_menu_new_private_tab">Nauja privačioji kortelė</string>
   <!-- Browser menu label that navigates to the Password screen -->
   <string name="browser_menu_passwords">Slaptažodžiai</string>
   <!-- Content description (not visible, for screen readers etc.) for the handle used to drag the main menu at the bottom of the screen. -->
@@ -295,10 +287,8 @@
   <!--
     Preferences
 
-    Title for the settings page
+    Preference category for general settings
   -->
-  <string name="settings">Nuostatos</string>
-  <!-- Preference category for general settings -->
   <string name="preferences_category_general">Bendrosios</string>
   <!-- Preference category for all links about Fenix -->
   <string name="preferences_category_about">Apie</string>
@@ -540,8 +530,6 @@
     Title of preference for tabs management
   -->
   <string name="preferences_tabs">Kortelės</string>
-  <!-- Title of preference that allows a user to specify the tab view -->
-  <string name="preferences_tab_view">Kortelių vaizdas</string>
   <!-- Option for a list tab view -->
   <string name="tab_view_list">Sąrašas</string>
   <!-- Option for a grid tab view -->
@@ -578,13 +566,7 @@
   <string name="close_tabs_after_one_week_summary">Užverti po savaitės</string>
   <!-- Summary for tabs preference when auto closing tabs setting is set to auto close tabs after one month -->
   <string name="close_tabs_after_one_month_summary">Užverti po mėnesio</string>
-  <!--
-    Inactive tabs
-
-    Category header of a preference that allows a user to enable or disable the inactive tabs feature
-  -->
-  <string name="preferences_inactive_tabs">Perkelti senas korteles prie neaktyvių</string>
-  <!-- Title of inactive tabs preference -->
+  <!-- Summary of the preference that allows a user to enable or disable the inactive tabs feature. -->
   <string name="preferences_inactive_tabs_title">Kortelės, kurių paskutines dvi savaites nenaudojote, bus perkeltos į neaktyvių skiltį.</string>
   <!--
     Studies
@@ -620,8 +602,6 @@
   <string name="close_tab_title">Užverti kortelę „%s“</string>
   <!-- Content description (not visible, for screen readers etc.): Opens the open tabs menu when pressed -->
   <string name="open_tabs_menu">Atvertų kortelių meniu</string>
-  <!-- Open tabs menu item to save tabs to collection -->
-  <string name="tabs_menu_save_to_collection1">Įtraukti korteles į rinkinį</string>
   <!-- Text for the menu button to delete a collection -->
   <string name="collection_delete">Pašalinti rinkinį</string>
   <!-- Text for the menu button to rename a collection -->
@@ -653,16 +633,6 @@
     %1$d is the number of bookmarks selected
   -->
   <string name="history_multi_select_title">Pasirinkta: %1$d</string>
-  <!-- Text for the header that groups the history for today -->
-  <string name="history_today">Šiandien</string>
-  <!-- Text for the header that groups the history for yesterday -->
-  <string name="history_yesterday">Vakar</string>
-  <!-- Text for the header that groups the history the past 7 days -->
-  <string name="history_7_days">Paskiausios 7 dienos</string>
-  <!-- Text for the header that groups the history the past 30 days -->
-  <string name="history_30_days">Paskiausios 30 dienų</string>
-  <!-- Text for the header that groups the history older than the last month -->
-  <string name="history_older">Seniau</string>
   <!-- Text shown when no history exists -->
   <string name="history_empty_message">Žurnalų įrašų nėra</string>
   <!--
@@ -894,8 +864,6 @@
   <string name="qr_scanner_dialog_invalid">Neteisingas saityno adresas.</string>
   <!-- QR code scanner prompt dialog positive option when there is an error -->
   <string name="qr_scanner_dialog_invalid_ok">Gerai</string>
-  <!-- Tab collection deletion prompt dialog message. %1$s is the collection name. -->
-  <string name="tab_collection_dialog_message">Ar tikrai norite pašalinti „%1$s“?</string>
   <!-- Sample text for accessibility font size -->
   <string name="accessibility_text_size_sample_text_1">Tai pavyzdinis tekstas. Jis leidžia pamatyti, kaip atrodys tekstas padidinus arba sumažinus jo dydį su šia nuostata.</string>
   <!-- Summary for Accessibility Text Size Scaling Preference -->
@@ -1219,8 +1187,6 @@
   <string name="confirm_clear_permission_site">Ar tikrai norite išvalyti šį leidimą šioje svetainėje?</string>
   <!-- label shown when there are not site exceptions to show in the site exception settings -->
   <string name="no_site_exceptions">Nėra išimčių svetainėms</string>
-  <!-- Positive action of a dialog asking to delete -->
-  <string name="dialog_delete_positive">Pašalinti</string>
   <!-- The error message in add login view when hostname field is blank. -->
   <string name="saved_login_hostname_required" tools:ignore="UnusedResources">Serverio vardas privalomas</string>
   <!-- Voice search button content description -->

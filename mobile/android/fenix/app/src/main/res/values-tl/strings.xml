@@ -53,8 +53,6 @@
   <string name="home_bookmarks_menu_item_remove">Alisin</string>
   <!-- About content. %1$s is the name of the app (for example "Firefox"). -->
   <string name="about_content" tools:ignore="BrandUsage">Ang %1$s ay gawa ng Mozilla.</string>
-  <!-- Private Browsing -->
-  <string name="private_browsing_common_myths">Mga karaniwang pamahiin tungkol sa pribadong pag-browse</string>
   <!--
     True Private Browsing Mode
 
@@ -141,11 +139,7 @@
   <string name="recently_visited_menu_item_remove">Alisin</string>
   <!-- Content description for the button which navigates the user to show all of their history. -->
   <string name="past_explorations_show_all_content_description_2">Ipakita lahat ng mga dating pagtuklas</string>
-  <!--
-    Browser Fragment
-
-    Content description (not visible, for screen readers etc.): Navigate backward (browsing history)
-  -->
+  <!-- Content description (not visible, for screen readers etc.): Navigate backward (browsing history) -->
   <string name="browser_menu_back">Bumalik</string>
   <!-- Content description (not visible, for screen readers etc.): Navigate forward (browsing history) -->
   <string name="browser_menu_forward">Sumulong</string>
@@ -216,8 +210,6 @@
   <string name="browser_menu_sign_back_in_to_sync">Mag-sign in uli sa sync</string>
   <!-- Browser menu caption label for the "Sign back in to sync" browser menu item described in `browser_menu_sign_back_in_to_sync` when there is an error in syncing -->
   <string name="browser_menu_syncing_paused_caption">Panandaliang nakatigil ang pag-sync</string>
-  <!-- Browser menu label that creates a private tab -->
-  <string name="browser_menu_new_private_tab">Bagong pribadong tab</string>
   <!-- Browser menu label that navigates to the Password screen -->
   <string name="browser_menu_passwords">Mga password</string>
   <!-- Content description (not visible, for screen readers etc.) for bottom sheet handlebar custom tab menu. -->
@@ -310,18 +302,6 @@
   <string name="onboarding_preferences_dialog_positive_button">Tapos na</string>
   <!-- Terms of service onboarding title card label. 'Firefox' intentionally hardcoded here -->
   <string name="onboarding_welcome_to_firefox" tools:ignore="BrandUsage">Maligayang pagdating sa Firefox</string>
-  <!-- Line one of the terms of service onboarding page. %1$s is replaced by an active link, using onboarding_term_of_service_line_one_link_text_2 as text (“Firefox Terms of Use”). -->
-  <string name="onboarding_term_of_service_line_one_2">Sa pagpapatuloy, sumasang-ayon ka sa %1$s.</string>
-  <!-- Used as text for the link in onboarding_term_of_service_line_one_2. -->
-  <string name="onboarding_term_of_service_line_one_link_text_2" tools:ignore="BrandUsage">Mga Tuntunin sa Paggamit ng Firefox</string>
-  <!-- Line two of the terms of service onboarding page. 'Firefox' is intentionally hardcoded. %1$s is replaced by an active link, using onboarding_term_of_service_line_two_link_text as text (“Privacy Notice”). -->
-  <string name="onboarding_term_of_service_line_two_2" tools:ignore="BrandUsage">Pinapahalagahan ng Firefox ang iyong privacy. Alamin sa aming %1$s.</string>
-  <!-- Used as text for the link in onboarding_term_of_service_line_two. -->
-  <string name="onboarding_term_of_service_line_two_link_text">Paunawa sa Privacy</string>
-  <!-- Line three of the terms of service onboarding page. 'Firefox' and 'Mozilla' are intentionally hardcoded. %1$s is replaced by an active link using onboarding_term_of_service_line_three_link_text as text (“Manage”). -->
-  <string name="onboarding_term_of_service_line_three" tools:ignore="BrandUsage">Para tulungang mapaganda ang browser, nagpapadala ang Firefox ng mga diagnostic at interaction data sa Mozilla. %1$s</string>
-  <!-- Used as text for the link in onboarding_term_of_service_line_three. -->
-  <string name="onboarding_term_of_service_line_three_link_text">Pamahalaan</string>
   <!-- Marketing onboarding page title variant. “One last thing” refers to the final step or action in the onboarding process that we’re asking users to take before they can start using the browser. -->
   <string name="onboarding_marketing_title_1" tools:ignore="UnusedResources">Isa na lang</string>
   <!-- Marketing onboarding page body variant. 'Firefox' is intentionally hardcoded. -->
@@ -349,10 +329,8 @@
   <!--
     Preferences
 
-    Title for the settings page
+    Preference category for general settings
   -->
-  <string name="settings">Mga Setting</string>
-  <!-- Preference category for general settings -->
   <string name="preferences_category_general">Pangkalahatan</string>
   <!-- Preference category for all links about Fenix -->
   <string name="preferences_category_about">Tungkol sa</string>
@@ -825,8 +803,6 @@
     Title of preference for tabs management
   -->
   <string name="preferences_tabs">Mga Tab</string>
-  <!-- Title of preference that allows a user to specify the tab view -->
-  <string name="preferences_tab_view">Tab view</string>
   <!-- Option for a list tab view -->
   <string name="tab_view_list">Listahan</string>
   <!-- Option for a grid tab view -->
@@ -869,13 +845,7 @@
   <string name="opening_screen_last_tab_summary">Buksan sa huling tab</string>
   <!-- Summary for homepage preference indicating opening the homepage when re-opening the app after four hours of inactivity -->
   <string name="opening_screen_after_four_hours_of_inactivity_summary">Buksan sa homepage pagkatapos ng apat na oras</string>
-  <!--
-    Inactive tabs
-
-    Category header of a preference that allows a user to enable or disable the inactive tabs feature
-  -->
-  <string name="preferences_inactive_tabs">Ilipat ang mga lumang tab sa hindi aktibo</string>
-  <!-- Title of inactive tabs preference -->
+  <!-- Summary of the preference that allows a user to enable or disable the inactive tabs feature. -->
   <string name="preferences_inactive_tabs_title">Ang mga tab na hindi mo natingnan sa loob ng dalawang linggo ay ililipat sa di-aktibong seksyon.</string>
   <!--
     Studies
@@ -923,8 +893,6 @@
   <string name="close_tab_title">Isara ang tab na %s</string>
   <!-- Content description (not visible, for screen readers etc.): Opens the open tabs menu when pressed -->
   <string name="open_tabs_menu">Buksan ang menu ng mga tab</string>
-  <!-- Open tabs menu item to save tabs to collection -->
-  <string name="tabs_menu_save_to_collection1">I-save ang mga tab sa collection</string>
   <!-- Text for the menu button to delete a collection -->
   <string name="collection_delete">Burahin ang collection</string>
   <!-- Text for the menu button to rename a collection -->
@@ -956,16 +924,6 @@
     %1$d is the number of bookmarks selected
   -->
   <string name="history_multi_select_title">May %1$d napili</string>
-  <!-- Text for the header that groups the history for today -->
-  <string name="history_today">Ngayon</string>
-  <!-- Text for the header that groups the history for yesterday -->
-  <string name="history_yesterday">Kahapon</string>
-  <!-- Text for the header that groups the history the past 7 days -->
-  <string name="history_7_days">Huling 7 araw</string>
-  <!-- Text for the header that groups the history the past 30 days -->
-  <string name="history_30_days">Huling 30 araw</string>
-  <!-- Text for the header that groups the history older than the last month -->
-  <string name="history_older">Mas luma pa</string>
   <!-- Text shown when no history exists -->
   <string name="history_empty_message">Walang kasaysayan dito</string>
   <!--
@@ -1078,8 +1036,6 @@
   <string name="webcompat_reporter_label_url">URL</string>
   <!-- The error message of the URL text field when an invalid URL has been entered. -->
   <string name="webcompat_reporter_url_error_invalid">Maglagay ng isang wastong URL.</string>
-  <!-- The button text for the cancel button to leave the Web Compat Reporter feature. -->
-  <string name="webcompat_reporter_cancel">Ikansela</string>
   <!-- Broken site reason text for something else -->
   <string name="webcompat_reporter_reason_other">Iba pa</string>
   <!--
@@ -1436,8 +1392,6 @@
   <string name="qr_scanner_dialog_invalid">Hindi wasto ang web address.</string>
   <!-- QR code scanner prompt dialog positive option when there is an error -->
   <string name="qr_scanner_dialog_invalid_ok">OK</string>
-  <!-- Tab collection deletion prompt dialog message. %1$s is the collection name. -->
-  <string name="tab_collection_dialog_message">Sigurado ka bang gusto mong burahin ang %1$s?</string>
   <!-- Sample text for accessibility font size -->
   <string name="accessibility_text_size_sample_text_1">Halimbawa lang ito. Nandito ang tekstong ito para maipakita ang itsura kapag nilakihan o niliitan ang sukat sa setting na ito.</string>
   <!-- Summary for Accessibility Text Size Scaling Preference -->
@@ -2036,10 +1990,6 @@
   <string name="browser_menu_remove_from_shortcuts">Tanggalin sa mga shortcut</string>
   <!-- Message in delete confirmation dialog for password -->
   <string name="login_deletion_confirmation_2">Sigurado ka ba na gusto mong i-delete ang password na ito?</string>
-  <!-- Positive action of a dialog asking to delete -->
-  <string name="dialog_delete_positive">Burahin</string>
-  <!-- Negative action of a dialog asking to delete login -->
-  <string name="dialog_delete_negative">Ikansela</string>
   <!-- The page title for editing a saved password. -->
   <string name="edit_2">Baguhin ang password</string>
   <!-- The page title for adding new password. -->
@@ -2445,11 +2395,6 @@
   <string name="protection_panel_banner_protected_title">Nakabantay ang %s</string>
   <!-- Label text for the Enhanced Tracking Protection toggle. -->
   <string name="protection_panel_etp_toggle_label">Enhanced Tracking Protection</string>
-  <!--
-    Text for displaying the total number of trackers blocked in the protection panel.
-    %d is a placeholder for the number of trackers blocked.
-  -->
-  <string name="protection_panel_num_trackers_blocked">Mga naharang na tracker: %d</string>
   <!-- Title text for the protection panel permissions section. -->
   <string name="protection_panel_permissions_title">Mga pahintulot</string>
   <!--

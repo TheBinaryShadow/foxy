@@ -53,8 +53,6 @@
   <string name="home_bookmarks_menu_item_remove">Quitar</string>
   <!-- About content. %1$s is the name of the app (for example "Firefox"). -->
   <string name="about_content" tools:ignore="BrandUsage">%1$s ta producíu por Mozilla.</string>
-  <!-- Private Browsing -->
-  <string name="private_browsing_common_myths">Mitos habituales tocante al restolar en privao</string>
   <!--
     True Private Browsing Mode
 
@@ -124,11 +122,7 @@
     in the Recently visited section
   -->
   <string name="recently_visited_menu_item_remove">Quitar</string>
-  <!--
-    Browser Fragment
-
-    Content description (not visible, for screen readers etc.): Navigate backward (browsing history)
-  -->
+  <!-- Content description (not visible, for screen readers etc.): Navigate backward (browsing history) -->
   <string name="browser_menu_back">Atrás</string>
   <!-- Content description (not visible, for screen readers etc.): Navigate forward (browsing history) -->
   <string name="browser_menu_forward">Alantre</string>
@@ -225,8 +219,6 @@
   <string name="onboarding_preferences_dialog_positive_button">Fecho</string>
   <!-- Terms of service onboarding title card label. 'Firefox' intentionally hardcoded here -->
   <string name="onboarding_welcome_to_firefox" tools:ignore="BrandUsage">Afáyate en Firefox</string>
-  <!-- Used as text for the link in onboarding_term_of_service_line_one_2. -->
-  <string name="onboarding_term_of_service_line_one_link_text_2" tools:ignore="BrandUsage">Términos d\'usu de Mozilla</string>
   <!-- Text preview for smaller sized widgets -->
   <string name="search_widget_text_short">Buscar</string>
   <!-- Text preview for larger sized widgets -->
@@ -236,10 +228,8 @@
   <!--
     Preferences
 
-    Title for the settings page
+    Preference category for general settings
   -->
-  <string name="settings">Configuración</string>
-  <!-- Preference category for general settings -->
   <string name="preferences_category_general">Xeneral</string>
   <!-- Preference category for all links about Fenix -->
   <string name="preferences_category_about">Tocante a</string>
@@ -548,8 +538,6 @@
     Title of preference for tabs management
   -->
   <string name="preferences_tabs">Llingüetes</string>
-  <!-- Title of preference that allows a user to specify the tab view -->
-  <string name="preferences_tab_view">Llista de llingüetes</string>
   <!-- Option for a list tab view -->
   <string name="tab_view_list">En llista</string>
   <!-- Option for a grid tab view -->
@@ -586,13 +574,7 @@
   <string name="close_tabs_after_one_week_summary">Zarrales dempués d\'una selmana</string>
   <!-- Summary for tabs preference when auto closing tabs setting is set to auto close tabs after one month -->
   <string name="close_tabs_after_one_month_summary">Zarrales dempués d\'un mes</string>
-  <!--
-    Inactive tabs
-
-    Category header of a preference that allows a user to enable or disable the inactive tabs feature
-  -->
-  <string name="preferences_inactive_tabs">Mover les llingüetes antigües a la seición d\'inactividá</string>
-  <!-- Title of inactive tabs preference -->
+  <!-- Summary of the preference that allows a user to enable or disable the inactive tabs feature. -->
   <string name="preferences_inactive_tabs_title">Les llingüetes que nun visites en dos selmanes van a la seición d\'inactividá.</string>
   <!--
     Studies
@@ -626,8 +608,6 @@
   <string name="close_tab_title">Zarrar la llingüeta «%s»</string>
   <!-- Content description (not visible, for screen readers etc.): Opens the open tabs menu when pressed -->
   <string name="open_tabs_menu">Menú de llingüetes abiertes</string>
-  <!-- Open tabs menu item to save tabs to collection -->
-  <string name="tabs_menu_save_to_collection1">Guardar llingüetes nuna coleición</string>
   <!-- Text for the menu button to delete a collection -->
   <string name="collection_delete">Desaniciar la coleición</string>
   <!-- Text for the menu button to rename a collection -->
@@ -659,16 +639,6 @@
     %1$d is the number of bookmarks selected
   -->
   <string name="history_multi_select_title">%1$d na seleición</string>
-  <!-- Text for the header that groups the history for today -->
-  <string name="history_today">Güei</string>
-  <!-- Text for the header that groups the history for yesterday -->
-  <string name="history_yesterday">Ayeri</string>
-  <!-- Text for the header that groups the history the past 7 days -->
-  <string name="history_7_days">Los últimos 7 díes</string>
-  <!-- Text for the header that groups the history the past 30 days -->
-  <string name="history_30_days">Los últimos 30 díes</string>
-  <!-- Text for the header that groups the history older than the last month -->
-  <string name="history_older">D\'hai más de 30 díes</string>
   <!-- Text shown when no history exists -->
   <string name="history_empty_message">Nun hai nada</string>
   <!--
@@ -898,8 +868,6 @@
   <string name="qr_scanner_dialog_positive">PERMITIR</string>
   <!-- QR code scanner prompt dialog positive option to deny navigation to scanned link -->
   <string name="qr_scanner_dialog_negative">NEGAR</string>
-  <!-- Tab collection deletion prompt dialog message. %1$s is the collection name. -->
-  <string name="tab_collection_dialog_message">¿De xuru que quies desaniciar «%1$s»?</string>
   <!-- Sample text for accessibility font size -->
   <string name="accessibility_text_size_sample_text_1">Esto ye un testu d\'exemplu. Ta equí p\'amosar cómo va apaecer cuando aumentes o amenorgues el so tamañu con esta opción.</string>
   <!-- Summary for Accessibility Text Size Scaling Preference -->
@@ -1251,8 +1219,6 @@
   <string name="browser_menu_add_to_shortcuts">Amestar a los atayos</string>
   <!-- Browser menu button that removes a shortcut from the home fragment -->
   <string name="browser_menu_remove_from_shortcuts">Quitar de los atayos</string>
-  <!-- Positive action of a dialog asking to delete -->
-  <string name="dialog_delete_positive">Desaniciar</string>
   <!-- The page title for adding new password. -->
   <string name="add_login_2">Amiestu d\'una contraseña</string>
   <!-- Voice search button content description -->

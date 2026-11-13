@@ -17,11 +17,14 @@ import android.content.pm.PackageManager.PERMISSION_DENIED
 import android.content.pm.PackageManager.PERMISSION_GRANTED
 import android.content.pm.ResolveInfo
 import android.net.Uri
+import androidx.activity.result.ActivityResultLauncher
+import androidx.activity.result.PickVisualMediaRequest
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.net.toUri
 import androidx.test.core.app.ApplicationProvider
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import java.io.File
+import kotlin.test.assertEquals
 import kotlin.test.assertIs
 import kotlin.test.assertNotNull
 import mozilla.components.browser.state.action.BrowserAction
@@ -37,6 +40,7 @@ import mozilla.components.feature.prompts.PromptContainer
 import mozilla.components.feature.prompts.file.FilePicker.Companion.FILE_PICKER_ACTIVITY_REQUEST_CODE
 import mozilla.components.feature.prompts.file.FilePicker.Companion.FOLDER_PICKER_ACTIVITY_REQUEST_CODE
 import mozilla.components.support.test.any
+import mozilla.components.support.test.argumentCaptor
 import mozilla.components.support.test.eq
 import mozilla.components.support.test.middleware.CaptureActionsMiddleware
 import mozilla.components.support.test.mock
@@ -177,8 +181,8 @@ class FilePickerTest {
     }
 
     @Test
-    @Config(sdk = [28])
-    fun `handleFilePickerRequest with the required permission will call startActivityForResult on SDK 28`() {
+    @Config(sdk = [32])
+    fun `handleFilePickerRequest with the required permission will call startActivityForResult on SDK 32 and below`() {
         var onRequestPermissionWasCalled = false
 
         filePicker =
@@ -384,13 +388,87 @@ class FilePickerTest {
     }
 
     @Test
-    fun `onRequestPermissionsResult with FILE_PICKER_REQUEST and PERMISSION_DENIED will call onPermissionsDeny`() {
+    fun `onRequestPermissionsResult with FILE_PICKER_REQUEST and PERMISSION_DENIED will call onPermissionsDenied`() {
         filePicker = spy(filePicker)
+        filePicker.currentRequest = request
         doNothing().`when`(filePicker).onPermissionsDenied()
 
         filePicker.onPermissionsResult(emptyArray(), IntArray(1) { PERMISSION_DENIED })
 
         verify(filePicker).onPermissionsDenied()
+    }
+
+    @Test
+    fun `onRequestPermissionsResult without currentRequest falls back to active prompt request in store when GRANTED`() {
+        stubContext()
+        val tab = TabSessionState("tab1", ContentState(url = "http://mozilla.org", promptRequests = listOf(request)))
+        val store = BrowserStore(BrowserState(tabs = listOf(tab), selectedTabId = "tab1"))
+        filePicker = spy(FilePicker(fragment, store, fileUploadsDirCleaner = mock()) {})
+
+        filePicker.onPermissionsResult(emptyArray(), IntArray(1) { PERMISSION_GRANTED })
+
+        verify(filePicker).onPermissionsGranted(request)
+        assertNull(filePicker.currentRequest)
+    }
+
+    @Test
+    fun `onRequestPermissionsResult without currentRequest falls back to active prompt request in store when DENIED`() {
+        val tab = TabSessionState("tab1", ContentState(url = "http://mozilla.org", promptRequests = listOf(request)))
+        val store = BrowserStore(BrowserState(tabs = listOf(tab), selectedTabId = "tab1"))
+        filePicker = spy(FilePicker(fragment, store, fileUploadsDirCleaner = mock()) {})
+        doNothing().`when`(filePicker).onPermissionsDenied()
+
+        filePicker.onPermissionsResult(emptyArray(), IntArray(1) { PERMISSION_DENIED })
+
+        verify(filePicker).onPermissionsDenied()
+        assertEquals(request, filePicker.currentRequest)
+    }
+
+    @Test
+    fun `grant arriving after a rejected duplicate permission request does not crash or open a picker`() {
+        var onDismissCalls = 0
+        val audioRequest = request.copy(mimeTypes = arrayOf("audio/*"), onDismiss = { onDismissCalls++ })
+        val tab =
+            TabSessionState("tab1", ContentState(url = "http://mozilla.org", promptRequests = listOf(audioRequest)))
+        val store = BrowserStore(BrowserState(tabs = listOf(tab), selectedTabId = "tab1"))
+        doReturn(ApplicationProvider.getApplicationContext<Context>()).`when`(fragment).context
+        var requestedPermissions = emptyArray<String>()
+        filePicker = FilePicker(fragment, store, fileUploadsDirCleaner = mock()) { requestedPermissions = it }
+
+        // Recreated PromptFeature re-handles the pending prompt while the original dialog is still showing.
+        filePicker.handleFileRequest(audioRequest)
+        assertTrue(requestedPermissions.isNotEmpty())
+
+        // Android rejects the duplicate request with an empty result.
+        filePicker.onPermissionsResult(emptyArray(), IntArray(0))
+        assertEquals(1, onDismissCalls)
+
+        // The user then grants the original dialog.
+        filePicker.onPermissionsResult(requestedPermissions, IntArray(requestedPermissions.size) { PERMISSION_GRANTED })
+
+        assertEquals(1, onDismissCalls)
+        assertNull(filePicker.currentRequest)
+        verify(fragment, never()).startActivityForResult(any(), anyInt())
+    }
+
+    @Test
+    fun `onRequestPermissionsResult finds File prompt even if a Folder prompt is after it in promptRequests`() {
+        stubContext()
+        val tab =
+            TabSessionState(
+                "tab1",
+                ContentState(
+                    url = "http://mozilla.org",
+                    promptRequests = listOf(request, requestFolder),
+                ),
+            )
+        val store = BrowserStore(BrowserState(tabs = listOf(tab), selectedTabId = "tab1"))
+        filePicker = spy(FilePicker(fragment, store, fileUploadsDirCleaner = mock()) {})
+
+        filePicker.onPermissionsResult(emptyArray(), IntArray(1) { PERMISSION_GRANTED })
+
+        verify(filePicker).onPermissionsGranted(request)
+        assertNull(filePicker.currentRequest)
     }
 
     @Test
@@ -590,6 +668,35 @@ class FilePickerTest {
         val result = filePickerSpy.canUseAndroidPhotoPicker()
 
         assertFalse(result)
+    }
+
+    @Test
+    fun `onPermissionsDenied launches androidPhotoPicker with capabilities if available`() {
+        val capabilities = AndroidPhotoPicker.allHdrCapabilities()
+        val mockAndroidPhotoPicker = mock<AndroidPhotoPicker>()
+        val mockLauncher = mock<ActivityResultLauncher<PickVisualMediaRequest>>()
+        whenever(mockAndroidPhotoPicker.singleMediaPicker).thenReturn(mockLauncher)
+        whenever(mockAndroidPhotoPicker.mediaCapabilities).thenReturn(capabilities)
+        whenever(mockAndroidPhotoPicker.isPhotoPickerAvailable).thenReturn(true)
+
+        val imageRequest =
+            request.copy(
+                mimeTypes = arrayOf("image/*"),
+                isMultipleFilesSelection = false,
+            )
+
+        prepareSelectedSession(imageRequest)
+        stubContext()
+
+        filePicker.currentRequest = imageRequest
+        filePicker.androidPhotoPicker = mockAndroidPhotoPicker
+
+        filePicker.onPermissionsDenied()
+
+        val requestCaptor = argumentCaptor<PickVisualMediaRequest>()
+        verify(mockLauncher).launch(requestCaptor.capture())
+
+        assertEquals(capabilities, requestCaptor.value.mediaCapabilitiesForTranscoding)
     }
 
     @Test

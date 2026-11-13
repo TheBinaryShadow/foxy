@@ -39,8 +39,6 @@
   <string name="tab_tray_close_multiselect_content_description">Koʻp tanlov rejimidan chiqish</string>
   <!-- About content. %1$s is the name of the app (for example "Firefox"). -->
   <string name="about_content" tools:ignore="BrandUsage">%1$s brauzerini Mozilla ishlab chiqqan.</string>
-  <!-- Private Browsing -->
-  <string name="private_browsing_common_myths">Maxfiy koʻrish haqidagi umumiy afsonalar</string>
   <!--
     Open in App "contextual feature recommendation" (CFR)
 
@@ -113,11 +111,7 @@
   <string name="recently_visited_menu_item_remove">Olib tashlash</string>
   <!-- Content description for the button which navigates the user to show all of their history. -->
   <string name="past_explorations_show_all_content_description_2">Barcha oldingi qidiruvlarni koʻrsatish</string>
-  <!--
-    Browser Fragment
-
-    Content description (not visible, for screen readers etc.): Navigate backward (browsing history)
-  -->
+  <!-- Content description (not visible, for screen readers etc.): Navigate backward (browsing history) -->
   <string name="browser_menu_back">Orqaga</string>
   <!-- Content description (not visible, for screen readers etc.): Navigate forward (browsing history) -->
   <string name="browser_menu_forward">Oldinga</string>
@@ -210,10 +204,8 @@
   <!--
     Preferences
 
-    Title for the settings page
+    Preference category for general settings
   -->
-  <string name="settings">Sozlamalar</string>
-  <!-- Preference category for general settings -->
   <string name="preferences_category_general">Umumiy</string>
   <!-- Preference category for all links about Fenix -->
   <string name="preferences_category_about">Haqida</string>
@@ -505,8 +497,6 @@
     Title of preference for tabs management
   -->
   <string name="preferences_tabs">Varaqlar</string>
-  <!-- Title of preference that allows a user to specify the tab view -->
-  <string name="preferences_tab_view">Varaqni koʻrish</string>
   <!-- Option for a list tab view -->
   <string name="tab_view_list">Roʻyxat</string>
   <!-- Option for a grid tab view -->
@@ -543,13 +533,7 @@
   <string name="close_tabs_after_one_week_summary">Bir haftadan keyin yopish</string>
   <!-- Summary for tabs preference when auto closing tabs setting is set to auto close tabs after one month -->
   <string name="close_tabs_after_one_month_summary">Bir oydan keyin yopish</string>
-  <!--
-    Inactive tabs
-
-    Category header of a preference that allows a user to enable or disable the inactive tabs feature
-  -->
-  <string name="preferences_inactive_tabs">Eski varaqlarni nofaol holatga oʻtkazish</string>
-  <!-- Title of inactive tabs preference -->
+  <!-- Summary of the preference that allows a user to enable or disable the inactive tabs feature. -->
   <string name="preferences_inactive_tabs_title">Ikki hafta davomida ochilmagan varaqlar nofaol boʻlimga oʻtkaziladi.</string>
   <!--
     Studies
@@ -585,8 +569,6 @@
   <string name="close_tab_title">%s varagʻini yopish</string>
   <!-- Content description (not visible, for screen readers etc.): Opens the open tabs menu when pressed -->
   <string name="open_tabs_menu">Varaqlar menyusini ochish</string>
-  <!-- Open tabs menu item to save tabs to collection -->
-  <string name="tabs_menu_save_to_collection1">Varaqlarni kolleksiyaga saqlash</string>
   <!-- Text for the menu button to delete a collection -->
   <string name="collection_delete">Kolleksiyani oʻchirish</string>
   <!-- Text for the menu button to rename a collection -->
@@ -618,16 +600,6 @@
     %1$d is the number of bookmarks selected
   -->
   <string name="history_multi_select_title">Tanlandi: %1$d</string>
-  <!-- Text for the header that groups the history for today -->
-  <string name="history_today">Bugun</string>
-  <!-- Text for the header that groups the history for yesterday -->
-  <string name="history_yesterday">Kecha</string>
-  <!-- Text for the header that groups the history the past 7 days -->
-  <string name="history_7_days">Soʻnggi 7 kun</string>
-  <!-- Text for the header that groups the history the past 30 days -->
-  <string name="history_30_days">Soʻnggi 30 kun</string>
-  <!-- Text for the header that groups the history older than the last month -->
-  <string name="history_older">Eskiroq</string>
   <!-- Text shown when no history exists -->
   <string name="history_empty_message">Tarix yoʻq</string>
   <!--
@@ -887,8 +859,6 @@
   <string name="qr_scanner_dialog_invalid">Manzil xato kiritilgan.</string>
   <!-- QR code scanner prompt dialog positive option when there is an error -->
   <string name="qr_scanner_dialog_invalid_ok">OK</string>
-  <!-- Tab collection deletion prompt dialog message. %1$s is the collection name. -->
-  <string name="tab_collection_dialog_message">Siz %1$sni oʻchirishni xohlaysizmi?</string>
   <!-- Sample text for accessibility font size -->
   <string name="accessibility_text_size_sample_text_1">Bu namuna matn. Bu sozlamalar yordamida hajmni kattalashtirish yoki kamaytirishda matn qanday koʻrinishini namoyish etadi.</string>
   <!-- Summary for Accessibility Text Size Scaling Preference -->
@@ -1286,10 +1256,6 @@
   <string name="browser_menu_add_to_shortcuts">Yorliqlarga qoʻshish</string>
   <!-- Browser menu button that removes a shortcut from the home fragment -->
   <string name="browser_menu_remove_from_shortcuts">Yorliqlardan olib tashlash</string>
-  <!-- Positive action of a dialog asking to delete -->
-  <string name="dialog_delete_positive">Oʻchirish</string>
-  <!-- Negative action of a dialog asking to delete login -->
-  <string name="dialog_delete_negative">Bekor qilish</string>
   <!-- The error message in add login view when hostname field is blank. -->
   <string name="saved_login_hostname_required" tools:ignore="UnusedResources">Host nomi kerak</string>
   <!-- Voice search button content description -->

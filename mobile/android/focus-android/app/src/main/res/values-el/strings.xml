@@ -11,11 +11,13 @@
   <string name="action_cancel">Ακύρωση</string>
   <string name="action_save">Αποθήκευση</string>
   <!-- This text is shown in the URL bar when it's empty -->
-  <string name="urlbar_hint">Αναζήτηση όρου ή εισαγωγή διεύθυνσης</string>
+  <string name="urlbar_hint">Αναζήτηση ή εισαγωγή διεύθυνσης</string>
   <!-- "Snackbar" shown after the user has pressed the 'erase' button at the end of a browsing session -->
   <string name="feedback_erase2">Το ιστορικό περιήγησης διαγράφηκε</string>
   <!-- "Snackbar" shown after the user has pressed the 'erase' button at the end of a custom tab browsing session -->
   <string name="feedback_erase_custom_tab">Το ιστορικό της καρτέλας έχει διαγραφεί.</string>
+  <!-- Content description for the button that opens the menu. -->
+  <string name="content_description_menu">Μενού</string>
   <!-- Menu item: Share the currently visible page -->
   <string name="menu_share">Κοινή χρήση…</string>
   <!--
@@ -91,7 +93,7 @@
     Focus is hard coded since we can't use variables in this context.
     Do not translate or transliterate Focus.
   -->
-  <string name="text_selection_search_action_focus" tools:ignore="BrandUsage">Αναζήτηση στο Focus</string>
+  <string name="text_selection_search_action_focus" tools:ignore="BrandUsage,UnusedResources">Αναζήτηση στο Focus</string>
   <!--
     This is the label of an action we offer when the user selects text in other third-party apps.
     Klar is hard coded since we can't use variables in this context.
@@ -380,14 +382,6 @@
   <string name="onboarding_second_screen_default_browser_button_text">Ορισμός ως προεπιλογή</string>
   <!-- New Onboarding flow second screen skip onboarding button label -->
   <string name="onboarding_second_screen_skip_button_text">Παράλειψη</string>
-  <!-- First run tour (Default browser): Title -->
-  <string name="firstrun_defaultbrowser_title">Ενισχύστε το απόρρητό σας</string>
-  <!-- First run tour (Search): Title -->
-  <string name="firstrun_search_title">Αναζήτηση με τον δικό σας τρόπο</string>
-  <!-- First run tour (Shortcut): Title -->
-  <string name="firstrun_shortcut_title">Προσθήκη συντομεύσεων στην αρχική οθόνη</string>
-  <!-- First run tour (Privacy): Title -->
-  <string name="firstrun_privacy_title">Κάντε το απόρρητο συνήθεια</string>
   <!-- Label of the action that will add the current website to the home screen (shown in the confirmation dialog). -->
   <string name="dialog_addtohomescreen_action_add">Προσθηκη</string>
   <!-- Label of the action that will close the dialog and not add anything to the home screen (shown in the confirmation dialog). -->
@@ -533,8 +527,6 @@
   <string name="preference_exceptions_menu_remove">Αφαίρεση</string>
   <!-- Button to remove all websites from the exception list -->
   <string name="preference_exceptions_remove_all_button_label">Αφαίρεση όλων των ιστοτόπων</string>
-  <!-- Title for Preference screen for cookie blocking for exceptions tracking protection -->
-  <string name="preference_block_cookies_title">Φραγή cookie</string>
   <!-- Headline for the tab crash report screen -->
   <string name="tab_crash_report_headline">Δυστυχώς, αντιμετωπίζουμε πρόβλημα με αυτήν την καρτέλα.</string>
   <!-- Subtitle for the tab crash report screen -->

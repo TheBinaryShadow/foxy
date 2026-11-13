@@ -11,6 +11,7 @@ import android.content.Intent
 import android.content.Intent.EXTRA_INITIAL_INTENTS
 import android.content.pm.PackageManager.PERMISSION_GRANTED
 import android.net.Uri
+import android.os.Build
 import android.provider.MediaStore.EXTRA_OUTPUT
 import androidx.activity.result.PickVisualMediaRequest
 import androidx.activity.result.contract.ActivityResultContracts
@@ -225,6 +226,11 @@ internal class FilePicker(
             (prompt is File) || (prompt is Folder)
         }
 
+    private fun getActiveFilePromptRequest(): File? =
+        store.state.findCustomTabOrSelectedTab(sessionId)?.content?.promptRequests?.lastOrNull { prompt ->
+            prompt is File
+        } as? File
+
     /**
      * Notifies the feature that the permissions request was completed. It will then either process or dismiss the
      * prompt request.
@@ -234,9 +240,19 @@ internal class FilePicker(
      * @see [onNeedToRequestPermissions].
      */
     override fun onPermissionsResult(permissions: Array<String>, grantResults: IntArray) {
+        val request = (currentRequest as? File) ?: getActiveFilePromptRequest()
+
+        if (request == null) {
+            logger.warn("Permission result received without an active file request")
+            dismissRequest()
+            return
+        }
+
+        currentRequest = request
+
         if (grantResults.isNotEmpty() && grantResults.any { it == PERMISSION_GRANTED }) {
             // at least one permission was granted
-            onPermissionsGranted(currentRequest as File)
+            onPermissionsGranted(request)
             currentRequest = null
         } else {
             // all permissions were denied, either when requested or already permanently denied
@@ -305,16 +321,25 @@ internal class FilePicker(
     }
 
     private fun launchAndroidPhotoPicker() {
+        val builder = PickVisualMediaRequest.Builder().setMediaType(getVisualMediaType(currentRequest))
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+            builder.setMediaCapabilitiesForTranscoding(androidPhotoPicker?.mediaCapabilities)
+        }
+
+        val request = builder.build()
+
         if ((currentRequest as File).isMultipleFilesSelection) {
-            androidPhotoPicker?.multipleMediaPicker?.launch(PickVisualMediaRequest(getVisualMediaType(currentRequest)))
+            androidPhotoPicker?.multipleMediaPicker?.launch(request)
         } else {
-            androidPhotoPicker?.singleMediaPicker?.launch(PickVisualMediaRequest(getVisualMediaType(currentRequest)))
+            androidPhotoPicker?.singleMediaPicker?.launch(request)
         }
     }
 
-    private fun dismissRequest() {
+    @VisibleForTesting
+    internal fun dismissRequest() {
+        currentRequest = null
         store.consumePromptFrom<File>(sessionId) { request ->
-            currentRequest = null
             request.onDismiss()
         }
     }

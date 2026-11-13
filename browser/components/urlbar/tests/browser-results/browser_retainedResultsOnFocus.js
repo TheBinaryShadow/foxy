@@ -76,6 +76,7 @@ add_setup(async function () {
       ["browser.urlbar.scotchBonnet.enableOverride", false],
     ],
   });
+  UrlbarTestUtils.registerZeroPrefixProvider();
   // Add some history for the empty panel and autofill.
   await PlacesTestUtils.addVisits([
     {

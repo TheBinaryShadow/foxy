@@ -29,8 +29,6 @@
   <string name="tab_tray_select_collection">સંગ્રહ પસંદ કરો</string>
   <!-- Content description for close button while in multiselect mode in tab tray -->
   <string name="tab_tray_close_multiselect_content_description">મલ્ટિસિલેક્ટ મોડમાંથી બહાર નીકળો</string>
-  <!-- Private Browsing -->
-  <string name="private_browsing_common_myths">ખાનગી બ્રાઉઝિંગ વિશે સામાન્ય માન્યતાઓ</string>
   <!--
     Home screen icons - Long press shortcuts
 
@@ -39,11 +37,7 @@
   <string name="home_screen_shortcut_open_new_tab_2">નવી ટૅબ</string>
   <!-- Shortcut action to open new private tab -->
   <string name="home_screen_shortcut_open_new_private_tab_2">નવી ખાનગી ટેબ</string>
-  <!--
-    Browser Fragment
-
-    Content description (not visible, for screen readers etc.): Navigate backward (browsing history)
-  -->
+  <!-- Content description (not visible, for screen readers etc.): Navigate backward (browsing history) -->
   <string name="browser_menu_back">પાછા જાવ</string>
   <!-- Content description (not visible, for screen readers etc.): Navigate forward (browsing history) -->
   <string name="browser_menu_forward">આગળ વઘારો</string>
@@ -110,10 +104,8 @@
   <!--
     Preferences
 
-    Title for the settings page
+    Preference category for general settings
   -->
-  <string name="settings">સેટિંગ્સ</string>
-  <!-- Preference category for general settings -->
   <string name="preferences_category_general">સામાન્ય</string>
   <!-- Preference category for all links about Fenix -->
   <string name="preferences_category_about">વિશે</string>
@@ -295,12 +287,6 @@
     %1$d is the number of bookmarks selected
   -->
   <string name="history_multi_select_title">%1$d પસંદ કરેલ</string>
-  <!-- Text for the header that groups the history the past 7 days -->
-  <string name="history_7_days">છેલ્લા 7 દિવસો</string>
-  <!-- Text for the header that groups the history the past 30 days -->
-  <string name="history_30_days">છેલ્લા 30 દિવસો</string>
-  <!-- Text for the header that groups the history older than the last month -->
-  <string name="history_older">જૂનું</string>
   <!-- Text shown when no history exists -->
   <string name="history_empty_message">અહીં કોઈ ઇતિહાસ નથી</string>
   <!--
@@ -495,8 +481,6 @@
   <string name="qr_scanner_dialog_positive">પરવાનગી આપો</string>
   <!-- QR code scanner prompt dialog positive option to deny navigation to scanned link -->
   <string name="qr_scanner_dialog_negative">નકારો</string>
-  <!-- Tab collection deletion prompt dialog message. %1$s is the collection name. -->
-  <string name="tab_collection_dialog_message">શું તમે ખરેખર %1$s ને કાઢી નાખવા માંગો છો?</string>
   <!-- Summary for Accessibility Text Size Scaling Preference -->
   <string name="preference_accessibility_text_size_summary">વેબસાઇટ્સ પર ટેક્સ્ટ મોટા અથવા નાનાં બનાવો</string>
   <!-- Title for Accessibility Text Size Scaling Preference -->
